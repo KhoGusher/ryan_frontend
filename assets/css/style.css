@@ -15,12 +15,12 @@ body {
 }
 
 a {
-  color: #1bbd36;
+  color: #2e98cb;
   text-decoration: none;
 }
 
 a:hover {
-  color: #2ae149;
+  color: #2e98cb;
   text-decoration: none;
 }
 
@@ -43,7 +43,7 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #1bbd36;
+  background: #2e98cb;
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -57,7 +57,7 @@ h6 {
 }
 
 .back-to-top:hover {
-  background: #21df41;
+  background: #2e98cb;
   color: #fff;
 }
 
@@ -101,7 +101,7 @@ h6 {
 }
 
 #header .logo a span {
-  color: #1bbd36;
+  color: #2e98cb;
 }
 
 #header .logo img {
@@ -129,7 +129,7 @@ h6 {
 }
 
 .header-social-links a:hover {
-  color: #1bbd36;
+  color: #2e98cb;
 }
 
 @media (max-width: 768px) {
@@ -187,7 +187,7 @@ h6 {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
-  color: #1bbd36;
+  color: #2e98cb;
 }
 
 .navbar .dropdown ul {
@@ -203,7 +203,7 @@ h6 {
   background: #fff;
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
   transition: 0.3s;
-  border-top: 2px solid #1bbd36;
+  border-top: 2px solid #383d45;
 }
 
 .navbar .dropdown ul li {
@@ -225,7 +225,7 @@ h6 {
 .navbar .dropdown ul a:hover,
 .navbar .dropdown ul .active:hover,
 .navbar .dropdown ul li:hover>a {
-  color: #1bbd36;
+  color: #383d45;
 }
 
 .navbar .dropdown:hover>ul {
@@ -324,7 +324,7 @@ h6 {
 .navbar-mobile a:hover,
 .navbar-mobile .active,
 .navbar-mobile li:hover>a {
-  color: #1bbd36;
+  color: #2e98cb;
 }
 
 .navbar-mobile .getstarted,
@@ -359,7 +359,7 @@ h6 {
 .navbar-mobile .dropdown ul a:hover,
 .navbar-mobile .dropdown ul .active:hover,
 .navbar-mobile .dropdown ul li:hover>a {
-  color: #1bbd36;
+  color: #2e98cb;
 }
 
 .navbar-mobile .dropdown>.dropdown-active {
@@ -406,7 +406,7 @@ h6 {
   background: rgba(4, 4, 4, 0.7);
   padding: 20px;
   color: #fff;
-  border-top: 5px solid #1bbd36;
+  border-top: 5px solid #383d45;
 }
 
 #hero .carousel-content h2 {
@@ -429,11 +429,11 @@ h6 {
   margin: 10px;
   color: #fff;
   animation-delay: 0.8s;
-  border: 2px solid #1bbd36;
+  border: 2px solid #383d45;
 }
 
 #hero .btn-get-started:hover {
-  background: #1bbd36;
+  background: #383d45;
   color: #fff;
   text-decoration: none;
 }
@@ -503,7 +503,7 @@ h6 {
 
 #hero .carousel-indicators li.active {
   opacity: 1;
-  background: #1bbd36;
+  background: #383d45;
 }
 
 @media (min-width: 1024px) {
@@ -570,7 +570,7 @@ section {
   display: block;
   width: 50px;
   height: 3px;
-  background: #1bbd36;
+  background: #383d45;
   bottom: 0;
   left: calc(50% - 25px);
 }
@@ -584,7 +584,7 @@ section {
 --------------------------------------------------------------*/
 .breadcrumbs {
   padding: 15px 0;
-  background: #1bbd36;
+  background: #383d45;
   min-height: 40px;
   margin-top: 72px;
 }
@@ -795,7 +795,7 @@ section {
 .portfolio #portfolio-flters li:hover,
 .portfolio #portfolio-flters li.filter-active {
   color: #fff;
-  background: #1bbd36;
+  background: #383d45;
 }
 
 .portfolio #portfolio-flters li:last-child {
@@ -842,7 +842,7 @@ section {
 
 .portfolio .portfolio-item .portfolio-info .preview-link:hover,
 .portfolio .portfolio-item .portfolio-info .details-link:hover {
-  color: #1bbd36;
+  color: #383d45;
 }
 
 .portfolio .portfolio-item .portfolio-info .details-link {
@@ -868,7 +868,7 @@ section {
 }
 
 .portfolio .portfolio-item .portfolio-links a:hover {
-  color: #57e76f;
+  color: #383d45;
 }
 
 .portfolio .portfolio-item:hover .portfolio-info {
@@ -897,11 +897,11 @@ section {
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #1bbd36;
+  border: 1px solid #383d45;
 }
 
 .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #1bbd36;
+  background-color: #383d45;
 }
 
 .portfolio-details .portfolio-info {
@@ -1004,7 +1004,7 @@ section {
   top: 7px;
   position: absolute;
   font-size: 20px;
-  color: #1bbd36;
+  color: #383d45;
 }
 
 .about-us .content p:last-child {
@@ -1057,7 +1057,7 @@ section {
 }
 
 .team .member .social a:hover {
-  color: #1bbd36;
+  color: #383d45;
 }
 
 .team .member .social i {
@@ -1127,7 +1127,7 @@ section {
   width: 1px;
   height: 10px;
   transition: 0.9s;
-  background-color: #1bbd36;
+  background-color: #383d45;
 }
 
 /*--------------------------------------------------------------
@@ -1162,7 +1162,7 @@ section {
 }
 
 .features .icon-box h3 a:hover {
-  color: #1bbd36;
+  color: #383d45;
 }
 
 /*--------------------------------------------------------------
@@ -1434,11 +1434,11 @@ section {
 
 .contact .info i {
   font-size: 20px;
-  color: #1bbd36;
+  color: #383d45;
   float: left;
   width: 44px;
   height: 44px;
-  border: 1px solid #1bbd36;
+  border: 1px solid #383d45;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1462,7 +1462,7 @@ section {
 }
 
 .contact .info:hover i {
-  background: #1bbd36;
+  background: #2e98cb;
   color: #fff;
 }
 
@@ -1493,7 +1493,7 @@ section {
 .contact .php-email-form .sent-message {
   display: none;
   color: #fff;
-  background: #18d26e;
+  background: #383d45;
   text-align: center;
   padding: 15px;
   font-weight: 600;
@@ -1513,7 +1513,7 @@ section {
   width: 24px;
   height: 24px;
   margin: 0 10px -6px 0;
-  border: 3px solid #18d26e;
+  border: 3px solid #383d45;
   border-top-color: #eee;
   animation: animate-loading 1s linear infinite;
 }
@@ -1528,7 +1528,7 @@ section {
 
 .contact .php-email-form input:focus,
 .contact .php-email-form textarea:focus {
-  border-color: #1bbd36;
+  border-color: #383d45;
 }
 
 .contact .php-email-form input {
@@ -1540,7 +1540,7 @@ section {
 }
 
 .contact .php-email-form button[type=submit] {
-  background: #1bbd36;
+  background: #383d45;
   border: 0;
   padding: 10px 24px;
   color: #fff;
@@ -1549,7 +1549,7 @@ section {
 }
 
 .contact .php-email-form button[type=submit]:hover {
-  background: #2ae149;
+  background: #2e98cb;
 }
 
 @keyframes animate-loading {
@@ -1594,7 +1594,7 @@ section {
 }
 
 .blog .entry .entry-title a:hover {
-  color: #1bbd36;
+  color: #383d45;
 }
 
 .blog .entry .entry-meta {
@@ -1639,7 +1639,7 @@ section {
 
 .blog .entry .entry-content .read-more a {
   display: inline-block;
-  background: #1bbd36;
+  background: #383d45;
   color: #fff;
   padding: 6px 20px;
   transition: 0.3s;
@@ -1648,7 +1648,7 @@ section {
 }
 
 .blog .entry .entry-content .read-more a:hover {
-  background: #1ed33c;
+  background: #383d45;
 }
 
 .blog .entry .entry-content h3 {
@@ -1703,7 +1703,7 @@ section {
 }
 
 .blog .entry .entry-footer a:hover {
-  color: #1bbd36;
+  color: #383d45;
 }
 
 .blog .entry .entry-footer .cats {
@@ -1812,7 +1812,7 @@ section {
 }
 
 .blog .blog-comments .comment h5 a:hover {
-  color: #1bbd36;
+  color: #383d45;
 }
 
 .blog .blog-comments .comment h5 .reply {
@@ -1858,7 +1858,7 @@ section {
 
 .blog .blog-comments .reply-form input:focus {
   box-shadow: none;
-  border-color: #57e76f;
+  border-color: #383d45;
 }
 
 .blog .blog-comments .reply-form textarea {
@@ -1869,7 +1869,7 @@ section {
 
 .blog .blog-comments .reply-form textarea:focus {
   box-shadow: none;
-  border-color: #57e76f;
+  border-color: #383d45;
 }
 
 .blog .blog-comments .reply-form .form-group {
@@ -1913,7 +1913,7 @@ section {
 
 .blog .blog-pagination li.active,
 .blog .blog-pagination li:hover {
-  background: #1bbd36;
+  background: #383d45;
 }
 
 .blog .blog-pagination li.active a,
@@ -1964,7 +1964,7 @@ section {
   font-size: 16px;
   padding: 0 15px;
   margin: -1px;
-  background: #1bbd36;
+  background: #383d45;
   color: #fff;
   transition: 0.3s;
   border-radius: 0 4px 4px 0;
@@ -1976,7 +1976,7 @@ section {
 }
 
 .blog .sidebar .search-form form button:hover {
-  background: #1ecf3b;
+  background: #383d45;
 }
 
 .blog .sidebar .categories ul {
@@ -1994,7 +1994,7 @@ section {
 }
 
 .blog .sidebar .categories ul a:hover {
-  color: #1bbd36;
+  color: #383d45;
 }
 
 .blog .sidebar .categories ul a span {
@@ -2024,7 +2024,7 @@ section {
 }
 
 .blog .sidebar .recent-posts h4 a:hover {
-  color: #1bbd36;
+  color: #383d45;
 }
 
 .blog .sidebar .recent-posts time {
@@ -2060,8 +2060,8 @@ section {
 
 .blog .sidebar .tags ul a:hover {
   color: #fff;
-  border: 1px solid #1bbd36;
-  background: #1bbd36;
+  border: 1px solid #383d45;
+  background: #383d45;
 }
 
 .blog .sidebar .tags ul a span {
@@ -2076,12 +2076,12 @@ section {
 #footer {
   color: #fff;
   font-size: 14px;
-  background: #111;
+  background: #383d45;
 }
 
 #footer .footer-top {
   padding: 60px 0 30px 0;
-  background: #1e1e1e;
+  background: #41464d;
 }
 
 #footer .footer-top .footer-contact {
@@ -2127,7 +2127,7 @@ section {
 
 #footer .footer-top .footer-links ul i {
   padding-right: 2px;
-  color: #1ed33c;
+  color: #2e98cb;
   font-size: 18px;
   line-height: 1;
 }
@@ -2191,7 +2191,7 @@ section {
   background: none;
   font-size: 16px;
   padding: 0 20px;
-  background: #1bbd36;
+  background: #383d45;
   color: #fff;
   transition: 0.3s;
   border-radius: 0 4px 4px 0;
@@ -2199,7 +2199,7 @@ section {
 }
 
 #footer .footer-newsletter form input[type=submit]:hover {
-  background: #2ae149;
+  background: #383d45;
 }
 
 #footer .credits {
@@ -2224,7 +2224,188 @@ section {
 }
 
 #footer .social-links a:hover {
-  background: #1bbd36;
+  background: #2e98cb;
   color: #fff;
   text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.welcome-section {
+  position: relative;
+  height: 30vh; /* Covers 30% of the viewport height */
+  background-image: url('assets/img/slide/slide-3.jpg'); /* Replace with your image URL */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+/* Styling for welcome text */
+.welcome-text {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for text readability */
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+/* About section */
+.about-section {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px;
+  gap: 20px;
+}
+
+/* Ensures both child divs are the same height */
+.text-container, .image-container {
+  flex: 1 1 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  align-self: stretch;
+}
+
+/* Text container styling */
+.text-container h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.text-container p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* Button styling */
+.explore-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.explore-button:hover {
+  background-color: #0056b3;
+}
+
+/* Image container styling */
+.image-container {
+  background-image: url('assets/img/slide/slide-3.jpg'); /* Replace with your image URL */
+  background-size: cover;
+  background-position: center;
+}
+
+/* Responsive design for larger screens */
+@media (min-width: 768px) {
+  .about-section {
+    flex-direction: row;
+  }
+
+  .text-container, .image-container {
+    flex: 1 1 50%; /* Each takes half of the row */
+  }
+}
+
+/* Products Section */
+.products-section {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.products-section h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+/* Card container styling */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Individual card styling */
+.card {
+  width: 100%;
+  max-width: 300px;
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+/* Card image section */
+.card-image {
+  width: 100%;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Card content section */
+.card-content {
+  padding: 15px;
+  text-align: left;
+}
+
+.card-content h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.card-content p {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Hover effect for card */
+.card:hover {
+  transform: translateY(-5px);
 }
