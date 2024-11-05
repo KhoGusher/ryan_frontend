@@ -4,6 +4,103 @@
 
 <head>
 
+  <style>
+    /* Custom styling for the title */
+    .core-values-title {
+      font-weight: bold;
+      color: #4a90e2;
+      text-align: center;
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    /* Flex container to hold the circles */
+    .core-values-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* Circle styling */
+    .circle {
+      width: 100px;
+      height: 100px;
+      background-color: #4a90e2;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      font-size: 16px;
+      position: relative;
+      margin: 0 25px; /* Increase space between circles */
+    }
+
+    /* Horizontal lines connecting circles */
+    .circle:before,
+    .circle:after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      width: 50px; /* Shorter width to keep lines outside circles */
+      height: 2px;
+      background-color: #4a90e2;
+      transform: translateY(-50%); /* Centers the lines vertically */
+    }
+
+    /* Position the left line */
+    .circle:before {
+      left: -50px; /* Adjust to match the width for alignment */
+    }
+
+    /* Position the right line */
+    .circle:after {
+      right: -50px; /* Adjust to match the width for alignment */
+    }
+
+    /* Remove lines on the first and last circles */
+    .circle:first-child:before {
+      display: none;
+    }
+
+    .circle:last-child:after {
+      display: none;
+    }
+</style>
+
+<style>
+  .card {
+      border: none;
+      transition: transform 0.3s ease;
+  }
+
+  .card:hover {
+      transform: scale(1.05);
+  }
+
+  .card-image {
+      height: 200px;
+      background-size: cover;
+      background-position: center;
+      border-top-left-radius: 0.25rem;
+      border-top-right-radius: 0.25rem;
+  }
+
+  .card-body {
+      padding: 20px;
+  }
+
+  .card-title {
+      font-weight: 600;
+      color: #333;
+  }
+
+  .card-text {
+      color: #777;
+  }
+
+  
+</style>
 
 
   <meta charset="utf-8">
@@ -32,14 +129,7 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: Company
-  * Template URL: https://bootstrapmade.com/company-free-html-bootstrap-template/
-  * Updated: Mar 17 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  <!-- <link href="assets/css/styles.css" rel="stylesheet"> -->
 </head>
 
 <body>
@@ -48,9 +138,11 @@
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center">
 
-      <h1 class="logo me-auto"><a href="index.html"><span style="color: steelblue;">Ray</span>en Limited</a></h1>
-      <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+       <h1 class="logo me-auto"><a href="index.html"> <img class="logo-img" src="assets/img/logo.png" alt="logo"/></a></h1>
+      <!-- <h1 class="logo me-auto"><a href="index.html"><span style="color: steelblue;">Ray</span>en Limited</a></h1> -->
+
+
 
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
@@ -61,15 +153,6 @@
               <li><a href="about.html">About Us</a></li>
               <li><a href="team.html">Team</a></li>
               <li><a href="testimonials.html">Testimonials</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
             </ul>
           </li>
 
@@ -78,11 +161,11 @@
         
           <li class="dropdown"><a ><span>Subsidiaries</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a href="Foods.html">Tara Foods</a></li>
-              <li><a href="Fresh.html">Rayen Fresh</a></li>
-              <li><a href="Dairy.html">Rayen Dairy</a></li>
-              <li><a href="Trading.html">Rayen Trading</a></li>
-              <li><a href="Poultry.html">Rayen Poultry</a></li>
+              <li><a href="Foods.html">Tara Foods Ltd</a></li>
+              <!-- <li><a href="Fresh.html">Rayen Fresh</a></li> -->
+              <li><a href="Dairy.html">Rayen Dairy Ltd</a></li>
+              <!-- <li><a href="Trading.html">Rayen Trading</a></li> -->
+              <li><a href="Poultry.html">Rayen Poultry Ltd</a></li>
             </ul>
         </li>
 
@@ -100,7 +183,8 @@
       </div>
 
     </div>
-  </header><!-- End Header -->
+  </header>
+  <!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
   <section id="hero">
@@ -173,27 +257,48 @@
               Rayen Ltd, founded in 2020, offers services such as management consulting, venture capital, debt, and private equity financing. We focus on helping businesses grow suistainably and ethically, with a mission to positively impact communities.
             
             </p>
+
+
+            
+<!-- 
             <ul>
               <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequa</li>
               <li><i class="ri-check-double-line"></i> Duis aute irure dolor in reprehenderit in voluptate velit</li>
               <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in</li>
-            </ul>
-            <p class="fst-italic">
+            </ul> -->
+            <!-- <p class="fst-italic">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
               magna aliqua.
-            </p>
+            </p> -->
           </div>
+
+         
         </div>
 
       </div>
     </section><!-- End About Us Section -->
 
+    <div class="text-center mb-5">
+      <h2 class=""><span style="color: steelblue;">CORE</span> VALUES</h2>
+      <p>Trust, Integrity, Teamwork and Inclusive Growth</p>
+    
+      <div class="d-flex justify-content-center align-items-center">
+        <div class="circle">Trust</div>
+        <div class="circle">Integrity</div>
+        <div class="circle">Teamwork</div>
+        <div class="circle">Inclusive Growth</div>
+      </div>
+    </div>
+
+    
+  
+
     <!-- ======= Services Section ======= -->
     <section id="services" class="services section-bg">
       <div class="container" data-aos="fade-up">
-
+        <h2 class="text-center py-3">Our <span style="color: steelblue;">Services</span> </h2>
         <div class="row">
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
             <div class="icon-box iconbox-blue">
               <div class="icon">
                 <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
@@ -206,7 +311,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
             <div class="icon-box iconbox-orange ">
               <div class="icon">
                 <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
@@ -219,7 +324,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
             <div class="icon-box iconbox-pink">
               <div class="icon">
                 <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
@@ -232,7 +337,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="100">
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="100">
             <div class="icon-box iconbox-yellow">
               <div class="icon">
                 <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
@@ -253,12 +358,56 @@
 
       </div>
     </section><!-- End Services Section -->
+    
 
     <!-- ======= Our Subsidiaries section ======= -->
-  <div class="products-section">
-    <h2>Our Subsidiaries</h2>
+  <div class="products-section container ">
+    <h2> <span style="color: steelblue;">Our</span> Subsidiaries</h2>
+
+
     <p>Rayen Limited’s diverse subsidiaries drive innovation across agriculture, food, and global trade</p>
-    <div class="card-container">
+
+        <div class="row  ">
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-image" style="background-image: url('assets/img/foods/pic-2.webp');"></div>
+                <div class="card-body text-center">
+                    <h5 class="card-title">Tara Foods Ltd</h5>
+                    <p class="card-text">Specializing in high-quality food production, Tara Foods ensures sustainable agricultural practices and superior products for consumers.</p>
+                    <a href="#" class="btn btn-primary">Read More</a> 
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 shadow-sm">
+              <div class="card-image" style="background-image: url('assets/img/dairy/pic-8.avif');"></div>
+              <div class="card-body text-center">
+                  <h5 class="card-title">Rayen Dairy Ltd</h5>
+                  <p class="card-text">With a focus on sustainable dairy farming, Rayen Dairy provides the finest dairy products to consumers and businesses alike.</p>
+                  <a href="#" class="btn btn-primary">Read More</a> 
+              </div>
+          </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm">
+            <div class="card-image" style="background-image: url('assets/img/poultry/poultry.jpg');"></div>
+            <div class="card-body text-center">
+                <h5 class="card-title">Rayen Poultry Ltd</h5>
+                <p class="card-text">Providing fresh and sustainable poultry products, Rayen Poultry is committed to quality and ethical farming practices.</p>
+                <a href="#" class="btn btn-primary">Read More</a> 
+            </div>
+        </div>
+    </div>
+    
+
+        
+        </div>
+
+        
+    <!-- <div class="card-container">
       <div class="card">
         <div class="card-image" style="background-image: url('assets/img/foods/pic-2.webp');"></div>
         <div class="card-content">
@@ -269,28 +418,28 @@
       <div class="card">
         <div class="card-image" style="background-image: url('assets/img/dairy/pic-8.avif');"></div>
         <div class="card-content">
-          <h3>Rayen Dairy</h3>
+          <h3>Rayen Dairy Ltd</h3>
           <p>With a focus on sustainable dairy farming, Rayen Dairy provides the finest dairy products to consumers and businesses alike</p>
          </div>
       </div>
       <div class="card">
         <div class="card-image" style="background-image: url('assets/img/poultry/poultry.jpg');"></div>
         <div class="card-content">
-          <h3>Rayen Poultry</h3>
+          <h3>Rayen Poultry Ltd</h3>
           <p>Providing fresh and sustainable poultry products, Rayen Poultry is committed to quality and ethical farming practices</p>
           </div>
-      </div>
+      </div> -->
 
 
-      <div class="card">
+      <!-- <div class="card">
         <div class="card-image" style="background-image: url('assets/img/fresh/fruit.jpg');"></div>
         <div class="card-content">
           <h3>Rayen Fresh</h3>
           <p>Delivering farm-fresh produce to markets worldwide, Rayen Fresh is at the forefront of sustainable agriculture and supply chain</p>
           </div>
-      </div>
+      </div> -->
 
-
+<!-- 
       <div class="card">
         <div class="card-image" style="background-image: url('assets/img/trading/ship.webp');"></div>
         <div class="card-content">
@@ -298,10 +447,11 @@
           <p>Connecting global markets with high-quality imports and exports, Rayen Trading is your gateway to international trade excellence</p>
           </div>
       </div>
-    </div>
+    </div> -->
   </div>
 
 
+  <p>counter here </p>
 
 <!-- 
 
@@ -344,7 +494,8 @@
     </div>
   </section> -->
 
-
+  
+<p>Testimonials</p>
    
   </main><!-- End #main -->
 
@@ -356,8 +507,8 @@
         <div class="row">
 
           <div class="col-lg-3 col-md-6 footer-contact">
-            <h3>Rayen Limited</h3>
-             
+            <h3><span style="color: steelblue;">Rayen</span> Limited</h3>
+            
             <p>
               Synergy Co-Works, <br>
               Plot 526, Songwe Street,<br>
@@ -373,8 +524,8 @@
               <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Subsidiaries</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Contact</a></li>
             </ul>
           </div>
 
@@ -387,6 +538,17 @@
               <li><i class="bx bx-chevron-right"></i> <a href="#">Private Equity</a></li>
             </ul>
           </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Subsidiaries</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="Foods.html">Tara Foods Ltd</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="Dairy.html">Rayen Dairy Ltd</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="Poultry.html">Rayen Poultry Ltd</a></li>
+              
+            </ul>
+          </div>
+
 
         </div>
       </div>
