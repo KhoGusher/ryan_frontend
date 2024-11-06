@@ -2444,9 +2444,9 @@ section {
 
     /* Grid Layout */
     .impact-stats {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
+      /* display: flex; */
+      /* justify-content: center; */
+      /* flex-wrap: wrap; */
       gap: 40px;
     }
 
@@ -2500,15 +2500,7 @@ section {
     color: #333;
   }
   
-  /* Centered Testimonial Container */
-  .testimonial-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    max-width: 1000px;
-    margin: 0 auto;
-  }
+ 
   
   /* Testimonial Card Styles */
   .testimonial {
@@ -2586,6 +2578,17 @@ section {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   position: relative;
   overflow: hidden;
+}
+
+
+ /* Centered Testimonial Container */
+ .testimonial-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .testimonial-slide {
@@ -2669,8 +2672,9 @@ section {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 30px;
+  gap: 110px;
 }
+
 
 .stat-box {
   text-align: center;
