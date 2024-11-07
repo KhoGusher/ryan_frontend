@@ -45,15 +45,7 @@
               <li><a href="about.html">About Us</a></li>
               <li><a href="team.html">Team</a></li>
               <li><a href="testimonials.html">Testimonials</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
+
             </ul>
           </li>
 
@@ -63,9 +55,7 @@
           <li class="dropdown"><a ><span>Subsidiaries</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="Foods.html">Tara Foods</a></li>
-              <li><a href="Fresh.html">Rayen Fresh</a></li>
               <li><a href="Dairy.html">Rayen Dairy</a></li>
-              <li><a href="Trading.html">Rayen Trading</a></li>
               <li><a href="Poultry.html">Rayen Poultry</a></li>
             </ul>
         </li>
@@ -91,19 +81,59 @@
     <div class="welcome-text">Welcome To Rayen Poultry</div>
   </div>
 
+
   <!-- About Section -->
   <div class="about-section">
     <div class="text-container">
-      <h2>About Rayen Poultry</h2>
+      <h2>About <span style="color: steelblue;">Rayen</span> Poultry</h2>
       <p>Rayen Poultry is dedicated to raising and delivering the finest poultry products in the region. Our farms follow best practices in poultry farming, ensuring that our chickens are raised in a humane, healthy environment. From free-range eggs to high-quality meat, Rayen Poultry provides nutritious options for your family.</p>
-      <a href="#" class="explore-button">Explore Our Services</a>
+      <a href="#" class="explore-button" style="background-color: steelblue;" >Explore Our Services</a>
+
     </div>
-    <div style="background-image: url('assets/img/poultry/poultry.jpg');"></div>
+
+    <!-- Accordion section -->
+    <div>
+      <div class="accordion">
+        <div class="accordion-item">
+            <button class="accordion-header" onclick="toggleAccordion(this)">Farm size:</button>
+            <div class="accordion-content">
+            <p>Whole farm - 20 Acres</p>    
+            </div>
+        </div>
+        
+        <div class="accordion-item">
+            <button class="accordion-header" onclick="toggleAccordion(this)">Farm location:</button>
+            <div class="accordion-content">
+            <p>Muwawane Village, Chiwamba EPA, TA Chimutu, Lilongwe, Malawi.</p>    
+            </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-header" onclick="toggleAccordion(this)">Incorporation Date:</button>
+          <div class="accordion-content">
+          <p>23 December</p>    
+          </div>
+      </div>
+    </div>
+    
+    <script>
+      function toggleAccordion(element) {
+        element.classList.toggle("active");
+        let content = element.nextElementSibling;
+        content.style.display = content.style.display === "block" ? "none" : "block";
+    }
+    
+    </script>
+    
+    </div>
+    <!-- End of accordion section -->
   </div>
+  <!-- End of about section -->
+
 
   <!-- Products Section -->
   <div class="products-section">
-    <h2>Our Poultry Products</h2>
+    <h2>Our <span style="color: steelblue;">Poultry</span> Products</h2>
     <div class="card-container">
       <div class="card">
         <div class="card-image" style="background-image: url('assets/img/poultry/wholechicken.jpg');"></div>
@@ -131,7 +161,7 @@
 
   <!-- Our Commitment Section -->
   <div class="products-section">
-    <h2>Our Commitment to Animal Welfare</h2>
+    <h2><span style="color: steelblue;">Our Commitment</span> to Animal Welfare</h2>
     <p>At Rayen Poultry, we believe in ethical farming. Our chickens are raised in a free-range environment with access to open spaces and fresh feed. We ensure their well-being through humane practices, contributing to healthier and higher-quality poultry products.</p>
     <div class="card-container">
       <div class="card">
@@ -160,120 +190,182 @@
 
 
 
-<!-- Testimonials Section -->
-<section id="testimonials" class="testimonials-section">
-  <div class="container">
-    <h2 class="section-heading">What Our Customers Are Saying</h2>
-    <div class="testimonial-container">
-      <div class="testimonial">
-        <div class="profile">
-          <img src="assets/img/testimonials/testimonials-1.jpg" alt="Saul Goodman">
-        </div>
-        <div class="content">
-          <h3>Johna Chirambo</h3>
-          <p class="role">Customer.</p>
-          <p class="quote">Their dairy products are of the highest quality. I particularly love their yogurt—it’s smooth and delicious!</p>
-        </div>
-      </div>
-      <div class="testimonial">
-        <div class="profile">
-          <img src="assets/img/testimonials/testimonials-2.jpg" alt="Sara Wilsson">
-        </div>
-        <div class="content">
-          <h3>Susan Kadama</h3>
-          <p class="role">Customer</p>
-          <p class="quote">Tara Foods always delivers the freshest products! I’m never disappointed with their produce. Highly recommended!</p>
-        </div>
-      </div>
+  <!-- Map Section -->
+  <div class="map-section">
+    <iframe style="border:0; width: 100%; height: 350px;" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d10000!2d33.81568729867308!3d-13.955098130901163!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1699545153407" frameborder="0" allowfullscreen></iframe>
+</div>
+  <!-- End of Map Section -->
 
-      <div class="testimonial">
-        <div class="profile">
-          <img src="assets/img/testimonials/testimonials-2.jpg" alt="Sara Wilsson">
-        </div>
-        <div class="content">
-          <h3>Micheal Kankwatila</h3>
-          <p class="role">Customer</p>
-          <p class="quote">Great service, excellent products, and they care about the environment. Tara Foods is my go-to!</p>
-        </div>
-      </div>
-      
-    </div>
+  <!-- Video section -->
+<div class="video-section" style="text-align: center;">
+  <h2>Watch <span style="color: steelblue;">Our</span> Video</h2>
+  <div class="video-container" style="display: inline-block; width: 100%; max-width: 800px; height: 500px; overflow: hidden; border-radius: 15px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+      <iframe src="https://www.youtube.com/embed/j5x4AAMsPwE" 
+              title="YouTube video player" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+              allowfullscreen
+              style="width: 100%; height: 100%; border: none;"></iframe>
   </div>
-</section>
+</div>
+ <!-- End of video section -->
+  <!-- Gallery section -->
+<div class="gallery-section">
+  <h2><span style="color: steelblue;">Gall</span>ery</h2>
+  <div class="gallery-container">
+      <div class="gallery-item">
+          <img src="assets/img/poultry/eggs.jpg" alt="Fresh Local Produce">
+      </div>
+      <div class="gallery-item">
+          <img src="assets/img/poultry/free-range-chickens.jpg" alt="Factory Worker Inspecting Products">
+      </div>
+      <div class="gallery-item">
+          <img src="assets/img/poultry/poultry.jpg" alt="Farmers Harvesting Crops">
+      </div>
+  </div>
+</div>
+<!-- End of Gallery section -->
+
+<!-- Testimonials Section -->
+<div class="testimonial-container">
+  <h2>What <span style="color: steelblue;">Our</span> Customers <span style="color: steelblue;">Say</span></h3>
+  <div class="testimonial-slide active">
+    <img src="assets/img/testimonials/testimonials-1.jpg" alt="User photo">
+    <p class="testimonial-text">
+      "Tara Foods always delivers the freshest products! I’m never disappointed with their produce. Highly recommended!"
+      </p>
+    <p class="testimonial-name">Johna Chirambo</p>
+    <p class="testimonial-source">Customer</p>
+  </div>
+
+  <div class="testimonial-slide">
+    <img src="assets/img/testimonials/testimonials-2.jpg" alt="User photo">
+    <p class="testimonial-text">
+      "Their dairy products are of the highest quality. I particularly love their yogurt—it’s smooth and delicious!"
+    </p>
+    <p class="testimonial-name">Susan Kadama</p>
+    <p class="testimonial-source">Customer</p>
+  </div>
+
+
+  <div class="testimonial-slide">
+    <img src="assets/img/testimonials/testimonials-5.jpg" alt="User photo">
+    <p class="testimonial-text">
+      "Great service, excellent products, and they care about the environment. Tara Foods is my go-to!"</p>
+    <p class="testimonial-name">Micheal Kankwatila</p>
+    <p class="testimonial-source">Customer</p>
+  </div>
+
+  <!-- Arrows for navigation -->
+  <span class="arrow-left" onclick="prevSlide()">&#10094;</span>
+  <span class="arrow-right" onclick="nextSlide()">&#10095;</span>
+</div>
+
+<script>
+  let currentSlide = 0;
+  const slides = document.querySelectorAll('.testimonial-slide');
+
+  function showSlide(index) {
+    slides.forEach((slide, i) => {
+      slide.classList.toggle('active', i === index);
+    });
+  }
+
+  function nextSlide() {
+    currentSlide = (currentSlide + 1) % slides.length;
+    showSlide(currentSlide);
+  }
+
+  function prevSlide() {
+    currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+    showSlide(currentSlide);
+  }
+
+  // Optional: Auto-slide every 5 seconds
+  setInterval(nextSlide, 5000);
+</script>
 <!-- End of Testimonials Section -->
+   <br>
 
 
 
 
 
 
-    <!-- ======= Footer ======= -->
-    <footer id="footer">
 
-      <div class="footer-top">
-        <div class="container">
-          <div class="row">
-  
-            <div class="col-lg-3 col-md-6 footer-contact">
-              <h3>Rayen Limited</h3>
-              <p>
-                Synergy Co-Works, <br>
-                Plot 526, Songwe Street,<br>
-                New Area 12, Lilongwe, Malawi. <br><br>
-                <strong>Phone:</strong> <br> +265 99 440 74 51<br> +265995076818 <br>
-                <br><strong>Email:</strong> <br> lyndon@rayenlimited.com<br>jacque@rayenlimited.com <br>
-              </p>
-            </div>
-  
-            <div class="col-lg-2 col-md-6 footer-links">
-              <h4>Useful Links</h4>
-              <ul>
-                <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-                <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-                <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-                <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-                <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
-              </ul>
-            </div>
-  
-            <div class="col-lg-3 col-md-6 footer-links">
-              <h4>Our Services</h4>
-              <ul>
-                <li><i class="bx bx-chevron-right"></i> <a href="#">Management Services</a></li>
-                <li><i class="bx bx-chevron-right"></i> <a href="#">Venture Capital Financing</a></li>
-                <li><i class="bx bx-chevron-right"></i> <a href="#">Dept Financing</a></li>
-                <li><i class="bx bx-chevron-right"></i> <a href="#">Private Equity</a></li>
-              </ul>
-            </div>
-  
-  
+
+
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3><span style="color: steelblue;">Rayen</span> Limited</h3>
+            
+            <p>
+              Synergy Co-Works, <br>
+              Plot 526, Songwe Street,<br>
+              New Area 12, Lilongwe, Malawi. <br><br>
+              <strong>Phone:</strong>+265 99 440 74 51<br>
+              <strong>Email:</strong>lyndon@rayenlimited.com<br>
+            </p>
           </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Subsidiaries</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Management Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Venture Capital Financing</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Dept Financing</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Private Equity</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Subsidiaries</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="Foods.html">Tara Foods Ltd</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="Dairy.html">Rayen Dairy Ltd</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="Poultry.html">Rayen Poultry Ltd</a></li>
+              
+            </ul>
+          </div>
+
+
         </div>
       </div>
-  
-      <div class="container d-md-flex py-4">
-  
-        <div class="me-md-auto text-center text-md-start">
-          <div class="copyright">
-            &copy; Copyright <strong><span>Rayen Limited</span></strong>. All Rights Reserved
-          </div>
-          <div class="credits">
-            <!-- All the links in the footer should remain intact. -->
-            <!-- You can delete the links only if you purchased the pro version. -->
-            <!-- Licensing information: https://bootstrapmade.com/license/ -->
-            <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/company-free-html-bootstrap-template/ -->
-            Designed by <a href="https://gusherlabs.com">GusherLabs</a>
-          </div>
-        </div>
-        <div class="social-links text-center text-md-right pt-3 pt-md-0">
-          <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-          <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-          <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-          <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-          <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+    </div>
+
+    <div class="container d-md-flex py-4">
+
+      <div class="me-md-auto text-center text-md-start">
+        <div class="copyright">
+          &copy; Copyright <strong><span style="color: steelblue;">Rayen Limited</span></strong>. All Rights Reserved
         </div>
       </div>
-    </footer><!-- End Footer -->
+      <div class="social-links text-center text-md-right pt-3 pt-md-0">
+        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
   
 </body>
 </html>
