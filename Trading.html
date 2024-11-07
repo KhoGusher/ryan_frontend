@@ -1,10 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+
+
+
+  <style>
+    /* General form styling */
+    .php-email-form {
+      background-color: #fff;
+      padding: 40px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+    }
+
+    .php-email-form h3 {
+      color: #333;
+      font-size: 24px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    /* Form inputs */
+    .php-email-form .form-control {
+      height: 50px;
+      border-radius: 5px;
+      padding: 10px;
+      font-size: 16px;
+      color: #333;
+      border: 1px solid #ccc;
+      transition: border-color 0.3s ease;
+    }
+
+    .php-email-form .form-control:focus {
+      border-color: steelblue;
+      box-shadow: 0 0 10px rgba(70, 130, 180, 0.5);
+      outline: none;
+    }
+
+    /* Textarea styling */
+    .php-email-form textarea.form-control {
+      resize: vertical;
+    }
+
+    /* Form button */
+    .php-email-form button[type="submit"] {
+      background-color: steelblue;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .php-email-form button[type="submit"]:hover {
+      background-color: #4169e1;
+    }
+
+    /* Error message and success message */
+    .php-email-form .loading,
+    .php-email-form .error-message,
+    .php-email-form .sent-message {
+      display: none;
+    }
+
+    .php-email-form .sent-message {
+      color: #28a745;
+      font-size: 16px;
+      margin-top: 10px;
+    }
+
+    .php-email-form .error-message {
+      color: #e74c3c;
+      font-size: 16px;
+      margin-top: 10px;
+    }
+
+    .php-email-form .loading {
+      color: #f39c12;
+      font-size: 16px;
+      margin-top: 10px;
+    }
+
+    /* Styling for form groups */
+    .php-email-form .form-group {
+      margin-bottom: 20px;
+    }
+
+    .php-email-form .form-group input,
+    .php-email-form .form-group textarea {
+      width: 100%;
+    }
+
+    /* Responsive design */
+    @media (max-width: 768px) {
+      .php-email-form {
+        padding: 30px;
+      }
+
+      .php-email-form h3 {
+        font-size: 20px;
+      }
+
+      .php-email-form button[type="submit"] {
+        width: 100%;
+        padding: 15px;
+      }
+    }
+
+      </style>
+
+
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Welcome to RAYEN Trading</title>
-  
+
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
@@ -59,13 +174,12 @@
 
           <li><a href="services.html">Services</a></li>
 
-        
+
           <li class="dropdown"><a ><span>Subsidiaries</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="Foods.html">Tara Foods</a></li>
               <li><a href="Fresh.html">Rayen Fresh</a></li>
               <li><a href="Dairy.html">Rayen Dairy</a></li>
-              <li><a href="Trading.html">Rayen Trading</a></li>
               <li><a href="Poultry.html">Rayen Poultry</a></li>
             </ul>
         </li>
@@ -103,7 +217,7 @@
 
   <!-- Products Section -->
   <div class="products-section">
-    <h2>Our Poultry Products</h2>
+    <h2>Our Import & Export Services</h2>
     <div class="card-container">
       <div class="card">
         <div class="card-image" style="background-image: url('assets/img/trading/import.jpg');"></div>
@@ -138,72 +252,121 @@
         <div class="card-image" style="background-image: url('assets/img/trading/agriculture.jpg');"></div>
         <div class="card-content">
           <h3>Agricultural Products</h3>
-        <p>From fresh produce to bulk commodities, Rayen Trading specializes in agricultural exports and imports.</p> 
+        <p>From fresh produce to bulk commodities, Rayen Trading specializes in agricultural exports and imports.</p>
         </div>
       </div>
       <div class="card">
         <div class="card-image" style="background-image: url('assets/img/trading/machinery.png');"></div>
         <div class="card-content">
           <h3>Manufactured Goods</h3>
-        <p>We trade a wide variety of manufactured goods, including machinery, textiles, and consumer products.</p>  
+        <p>We trade a wide variety of manufactured goods, including machinery, textiles, and consumer products.</p>
         </div>
       </div>
       <div class="card">
         <div class="card-image" style="background-image: url('assets/img/trading/Home-Appliance.jpg');"></div>
         <div class="card-content">
           <h3>Consumer Goods</h3>
-        <p>We offer a broad range of consumer goods, including electronics, apparel, and home essentials, for both import and export markets.</p>  
+        <p>We offer a broad range of consumer goods, including electronics, apparel, and home essentials, for both import and export markets.</p>
         </div>
       </div>
     </div>
   </div>
-
 
 
 
 <!-- Testimonials Section -->
-<section id="testimonials" class="testimonials-section">
-  <div class="container">
-    <h2 class="section-heading">What Our Customers Are Saying</h2>
-    <div class="testimonial-container">
-      <div class="testimonial">
-        <div class="profile">
-          <img src="assets/img/testimonials/testimonials-1.jpg" alt="Saul Goodman">
-        </div>
-        <div class="content">
-          <h3>Johna Chirambo</h3>
-          <p class="role">Customer.</p>
-          <p class="quote">Their dairy products are of the highest quality. I particularly love their yogurt—it’s smooth and delicious!</p>
-        </div>
-      </div>
-      <div class="testimonial">
-        <div class="profile">
-          <img src="assets/img/testimonials/testimonials-2.jpg" alt="Sara Wilsson">
-        </div>
-        <div class="content">
-          <h3>Susan Kadama</h3>
-          <p class="role">Customer</p>
-          <p class="quote">Tara Foods always delivers the freshest products! I’m never disappointed with their produce. Highly recommended!</p>
-        </div>
-      </div>
-
-      <div class="testimonial">
-        <div class="profile">
-          <img src="assets/img/testimonials/testimonials-2.jpg" alt="Sara Wilsson">
-        </div>
-        <div class="content">
-          <h3>Micheal Kankwatila</h3>
-          <p class="role">Customer</p>
-          <p class="quote">Great service, excellent products, and they care about the environment. Tara Foods is my go-to!</p>
-        </div>
-      </div>
-      
-    </div>
+<div class="testimonial-container">
+  <h2>What <span style="color: steelblue;">Our</span> Customers <span style="color: steelblue;">Say</span></h3>
+  <div class="testimonial-slide active">
+    <img src="assets/img/testimonials/testimonials-1.jpg" alt="User photo">
+    <p class="testimonial-text">
+      "Tara Foods always delivers the freshest products! I’m never disappointed with their produce. Highly recommended!"
+      </p>
+    <p class="testimonial-name">Johna Chirambo</p>
+    <p class="testimonial-source">Customer</p>
   </div>
-</section>
+
+  <div class="testimonial-slide">
+    <img src="assets/img/testimonials/testimonials-2.jpg" alt="User photo">
+    <p class="testimonial-text">
+      "Their dairy products are of the highest quality. I particularly love their yogurt—it’s smooth and delicious!"
+    </p>
+    <p class="testimonial-name">Susan Kadama</p>
+    <p class="testimonial-source">Customer</p>
+  </div>
+
+
+  <div class="testimonial-slide">
+    <img src="assets/img/testimonials/testimonials-5.jpg" alt="User photo">
+    <p class="testimonial-text">
+      "Great service, excellent products, and they care about the environment. Tara Foods is my go-to!"</p>
+    <p class="testimonial-name">Micheal Kankwatila</p>
+    <p class="testimonial-source">Customer</p>
+  </div>
+
+  <!-- Arrows for navigation -->
+  <span class="arrow-left" onclick="prevSlide()">&#10094;</span>
+  <span class="arrow-right" onclick="nextSlide()">&#10095;</span>
+</div>
+
+<script>
+  let currentSlide = 0;
+  const slides = document.querySelectorAll('.testimonial-slide');
+
+  function showSlide(index) {
+    slides.forEach((slide, i) => {
+      slide.classList.toggle('active', i === index);
+    });
+  }
+
+  function nextSlide() {
+    currentSlide = (currentSlide + 1) % slides.length;
+    showSlide(currentSlide);
+  }
+
+  function prevSlide() {
+    currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+    showSlide(currentSlide);
+  }
+
+  // Optional: Auto-slide every 5 seconds
+  setInterval(nextSlide, 5000);
+</script>
 <!-- End of Testimonials Section -->
+   <br>
 
 
+
+
+<div class="row mb-4 justify-content-center">
+  <div class="col-lg-10">
+    <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+      <h3>Contact Us</h3> <!-- Optional heading for clarity -->
+      <div class="row">
+        <div class="col-md-6 form-group">
+          <input type="text" name="name" class="form-control" id="name" placeholder="Name" required>
+        </div>
+        <div class="col-md-6 form-group mt-3 mt-md-0">
+          <input type="email" class="form-control" name="email" id="email" placeholder="Email" required>
+        </div>
+      </div>
+      <div class="form-group mt-3">
+        <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+      </div>
+      <div class="form-group mt-3">
+        <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+      </div>
+      <div class="my-3">
+        <div class="loading">Loading</div>
+        <div class="error-message"></div>
+        <div class="sent-message">Your message has been sent. Thank you!</div>
+      </div>
+      <div class="text-center">
+        <button type="submit">Send Message</button>
+      </div>
+    </form>
+  </div>
+</div>
 
 
 
@@ -213,7 +376,7 @@
       <div class="footer-top">
         <div class="container">
           <div class="row">
-  
+
             <div class="col-lg-3 col-md-6 footer-contact">
               <h3>Rayen Limited</h3>
               <p>
@@ -224,7 +387,7 @@
                 <br><strong>Email:</strong> <br> lyndon@rayenlimited.com<br>jacque@rayenlimited.com <br>
               </p>
             </div>
-  
+
             <div class="col-lg-2 col-md-6 footer-links">
               <h4>Useful Links</h4>
               <ul>
@@ -235,7 +398,7 @@
                 <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
               </ul>
             </div>
-  
+
             <div class="col-lg-3 col-md-6 footer-links">
               <h4>Our Services</h4>
               <ul>
@@ -245,14 +408,14 @@
                 <li><i class="bx bx-chevron-right"></i> <a href="#">Private Equity</a></li>
               </ul>
             </div>
-  
-  
+
+
           </div>
         </div>
       </div>
-  
+
       <div class="container d-md-flex py-4">
-  
+
         <div class="me-md-auto text-center text-md-start">
           <div class="copyright">
             &copy; Copyright <strong><span>Rayen Limited</span></strong>. All Rights Reserved
@@ -274,6 +437,6 @@
         </div>
       </div>
     </footer><!-- End Footer -->
-  
+
 </body>
 </html>

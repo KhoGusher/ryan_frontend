@@ -1,6 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
+
+
+
+
+
+  <style>
+    /* Custom styling for the title */
+    .core-values-title {
+      font-weight: bold;
+      color: #4a90e2;
+      text-align: center;
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    /* Flex container to hold the circles */
+    .core-values-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* Circle styling */
+    .circle {
+      width: 100px;
+      height: 100px;
+      background-color: #4a90e2;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      font-size: 16px;
+      position: relative;
+      margin: 0 25px; /* Increase space between circles */
+    }
+
+    /* Horizontal lines connecting circles */
+    .circle:before,
+    .circle:after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      width: 50px; /* Shorter width to keep lines outside circles */
+      height: 2px;
+      background-color: #4a90e2;
+      transform: translateY(-50%); /* Centers the lines vertically */
+    }
+
+    /* Position the left line */
+    .circle:before {
+      left: -50px; /* Adjust to match the width for alignment */
+    }
+
+    /* Position the right line */
+    .circle:after {
+      right: -50px; /* Adjust to match the width for alignment */
+    }
+
+    /* Remove lines on the first and last circles */
+    .circle:first-child:before {
+      display: none;
+    }
+
+    .circle:last-child:after {
+      display: none;
+    }
+</style>
+
+
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
@@ -8,7 +80,7 @@
   <meta content="" name="description">
   <meta content="" name="keywords">
 
-  <!-- Favicon (s) -->
+  <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
@@ -56,19 +128,20 @@
               <li><a href="about.html" class="active">About Us</a></li>
               <li><a href="team.html">Team</a></li>
               <li><a href="testimonials.html">Testimonials</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
+
             </ul>
           </li>
 
           <li><a href="services.html">Services</a></li>
+          <li class="dropdown"><a ><span>Subsidiaries</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="Foods.html">Tara Foods</a></li>
+              <li><a href="Dairy.html">Rayen Dairy</a></li>
+              <li><a href="Poultry.html">Rayen Poultry</a></li>
+              <li><a href="Trading.html">Rayen Trading</a></li>
+              <li><a href="Poultry.html">Rayen Poultry</a></li>
+            </ul>
+        </li>
           <li><a href="contact.html">Contact</a></li>
 
         </ul>
@@ -133,7 +206,7 @@
 
         <div class="section-title" data-aos="fade-up">
           <h2>Our <strong>Team</strong></h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+
         </div>
 
         <div class="row">
@@ -241,70 +314,117 @@
       </div>
     </section><!-- End Our Team Section -->
 
-    <!-- ======= Our Clients Section ======= -->
-    <!-- <section id="clients" class="clients">
-      <div class="container" data-aos="fade-up">
 
-        <div class="section-title">
-          <h2>Clients</h2>
-        </div>
 
-        <div class="row no-gutters clients-wrap clearfix" data-aos="fade-up">
 
-          <div class="col-lg-3 col-md-4 col-6">
-            <div class="client-logo">
-              <img src="assets/img/clients/client-1.png" class="img-fluid" alt="">
-            </div>
-          </div>
 
-          <div class="col-lg-3 col-md-4 col-6">
-            <div class="client-logo">
-              <img src="assets/img/clients/client-2.png" class="img-fluid" alt="">
-            </div>
-          </div>
 
-          <div class="col-lg-3 col-md-4 col-6">
-            <div class="client-logo">
-              <img src="assets/img/clients/client-3.png" class="img-fluid" alt="">
-            </div>
-          </div>
 
-          <div class="col-lg-3 col-md-4 col-6">
-            <div class="client-logo">
-              <img src="assets/img/clients/client-4.png" class="img-fluid" alt="">
-            </div>
-          </div>
+    <div class="text-center mb-5 mt-10">
+      <h2 class=""><span style="color: steelblue;">CORE</span> VALUES</h2>
+      <p>Trust, Integrity, Teamwork and Inclusive Growth</p>
 
-          <div class="col-lg-3 col-md-4 col-6">
-            <div class="client-logo">
-              <img src="assets/img/clients/client-5.png" class="img-fluid" alt="">
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4 col-6">
-            <div class="client-logo">
-              <img src="assets/img/clients/client-6.png" class="img-fluid" alt="">
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4 col-6">
-            <div class="client-logo">
-              <img src="assets/img/clients/client-7.png" class="img-fluid" alt="">
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4 col-6">
-            <div class="client-logo">
-              <img src="assets/img/clients/client-8.png" class="img-fluid" alt="">
-            </div>
-          </div>
-
-        </div>
-
+      <div class="d-flex justify-content-center align-items-center">
+        <div class="circle">Trust</div>
+        <div class="circle">Integrity</div>
+        <div class="circle">Teamwork</div>
+        <div class="circle">Inclusive Growth</div>
       </div>
-    </section>End Our Clients Section -->
+
+  </div>
+
 
   </main><!-- End #main -->
+
+
+
+
+
+
+   <!-- ======= Vision and Mission Section ======= -->
+<section id="services" class="services section-bg">
+  <div class="container" data-aos="fade-up">
+    <div class="row justify-content-center">
+
+      <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+        <div class="icon-box iconbox-blue">
+          <h4><a href="">Our Vision</a></h4>
+          <p>To deliver high-quality food and agricultural products globally, ensuring sustainability, growth, and innovation in every step we take.</p>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
+        <div class="icon-box iconbox-orange">
+          <h4><a href="">Our Mission</a></h4>
+          <p>To be a leading global agribusiness company that creates value for all stakeholders and contributes to a healthier planet.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section><!-- End Vision and Mission Section -->
+
+
+
+<!-- Testimonials Section -->
+<div class="testimonial-container">
+  <h2>What <span style="color: steelblue;">Our</span> Customers <span style="color: steelblue;">Say</span></h3>
+  <div class="testimonial-slide active">
+    <img src="assets/img/testimonials/testimonials-1.jpg" alt="User photo">
+    <p class="testimonial-text">
+      "Tara Foods always delivers the freshest products! I’m never disappointed with their produce. Highly recommended!"
+      </p>
+    <p class="testimonial-name">Johna Chirambo</p>
+    <p class="testimonial-source">Customer</p>
+  </div>
+
+  <div class="testimonial-slide">
+    <img src="assets/img/testimonials/testimonials-2.jpg" alt="User photo">
+    <p class="testimonial-text">
+      "Their dairy products are of the highest quality. I particularly love their yogurt—it’s smooth and delicious!"
+    </p>
+    <p class="testimonial-name">Susan Kadama</p>
+    <p class="testimonial-source">Customer</p>
+  </div>
+
+
+  <div class="testimonial-slide">
+    <img src="assets/img/testimonials/testimonials-5.jpg" alt="User photo">
+    <p class="testimonial-text">
+      "Great service, excellent products, and they care about the environment. Tara Foods is my go-to!"</p>
+    <p class="testimonial-name">Micheal Kankwatila</p>
+    <p class="testimonial-source">Customer</p>
+  </div>
+
+  <!-- Arrows for navigation -->
+  <span class="arrow-left" onclick="prevSlide()">&#10094;</span>
+  <span class="arrow-right" onclick="nextSlide()">&#10095;</span>
+</div>
+
+<script>
+  let currentSlide = 0;
+  const slides = document.querySelectorAll('.testimonial-slide');
+
+  function showSlide(index) {
+    slides.forEach((slide, i) => {
+      slide.classList.toggle('active', i === index);
+    });
+  }
+
+  function nextSlide() {
+    currentSlide = (currentSlide + 1) % slides.length;
+    showSlide(currentSlide);
+  }
+
+  function prevSlide() {
+    currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+    showSlide(currentSlide);
+  }
+
+  // Optional: Auto-slide every 5 seconds
+  setInterval(nextSlide, 5000);
+</script>
+<!-- End of Testimonials Section -->
+
 
   <!-- ======= Footer ======= -->
   <footer id="footer">
@@ -314,13 +434,14 @@
         <div class="row">
 
           <div class="col-lg-3 col-md-6 footer-contact">
-            <h3>Rayen Limited</h3>
+            <h3><span style="color: steelblue;">Rayen</span> Limited</h3>
+
             <p>
               Synergy Co-Works, <br>
               Plot 526, Songwe Street,<br>
               New Area 12, Lilongwe, Malawi. <br><br>
-              <strong>Phone:</strong> <br> +265 99 440 74 51<br> +265995076818 <br>
-              <br><strong>Email:</strong> <br> lyndon@rayenlimited.com<br>jacque@rayenlimited.com <br>
+              <strong>Phone:</strong>+265 99 440 74 51<br>
+              <strong>Email:</strong>lyndon@rayenlimited.com<br>
             </p>
           </div>
 
@@ -330,8 +451,8 @@
               <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Subsidiaries</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Contact</a></li>
             </ul>
           </div>
 
@@ -345,6 +466,16 @@
             </ul>
           </div>
 
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Subsidiaries</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="Foods.html">Tara Foods Ltd</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="Dairy.html">Rayen Dairy Ltd</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="Poultry.html">Rayen Poultry Ltd</a></li>
+
+            </ul>
+          </div>
+
 
         </div>
       </div>
@@ -354,14 +485,7 @@
 
       <div class="me-md-auto text-center text-md-start">
         <div class="copyright">
-          &copy; Copyright <strong><span>Rayen Limited</span></strong>. All Rights Reserved
-        </div>
-        <div class="credits">
-          <!-- All the links in the footer should remain intact. -->
-          <!-- You can delete the links only if you purchased the pro version. -->
-          <!-- Licensing information: https://bootstrapmade.com/license/ -->
-          <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/company-free-html-bootstrap-template/ -->
-          Designed by <a href="https://gusherlabs.com">GusherLabs</a>
+          &copy; Copyright <strong><span style="color: steelblue;">Rayen Limited</span></strong>. All Rights Reserved
         </div>
       </div>
       <div class="social-links text-center text-md-right pt-3 pt-md-0">

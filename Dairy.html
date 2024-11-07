@@ -1,14 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<<<<<<< HEAD
-=======
 
->>>>>>> 27d6cb0 (updated subsidiary at index.html and testimonials)
+
+
+
+
+  <style>
+
+
+    /* General form styling */
+    .php-email-form {
+      background-color: #fff;
+      padding: 40px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+    }
+
+    .php-email-form h3 {
+      color: #333;
+      font-size: 24px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    /* Form inputs */
+    .php-email-form .form-control {
+      height: 50px;
+      border-radius: 5px;
+      padding: 10px;
+      font-size: 16px;
+      color: #333;
+      border: 1px solid #ccc;
+      transition: border-color 0.3s ease;
+    }
+
+    .php-email-form .form-control:focus {
+      border-color: steelblue;
+      box-shadow: 0 0 10px rgba(70, 130, 180, 0.5);
+      outline: none;
+    }
+
+    /* Textarea styling */
+    .php-email-form textarea.form-control {
+      resize: vertical;
+    }
+
+    /* Form button */
+    .php-email-form button[type="submit"] {
+      background-color: steelblue;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .php-email-form button[type="submit"]:hover {
+      background-color: #4169e1;
+    }
+
+    /* Error message and success message */
+    .php-email-form .loading,
+    .php-email-form .error-message,
+    .php-email-form .sent-message {
+      display: none;
+    }
+
+    .php-email-form .sent-message {
+      color: #28a745;
+      font-size: 16px;
+      margin-top: 10px;
+    }
+
+    .php-email-form .error-message {
+      color: #e74c3c;
+      font-size: 16px;
+      margin-top: 10px;
+    }
+
+    .php-email-form .loading {
+      color: #f39c12;
+      font-size: 16px;
+      margin-top: 10px;
+    }
+
+    /* Styling for form groups */
+    .php-email-form .form-group {
+      margin-bottom: 20px;
+    }
+
+    .php-email-form .form-group input,
+    .php-email-form .form-group textarea {
+      width: 100%;
+    }
+
+    /* Responsive design */
+    @media (max-width: 768px) {
+      .php-email-form {
+        padding: 30px;
+      }
+
+      .php-email-form h3 {
+        font-size: 20px;
+      }
+
+      .php-email-form button[type="submit"] {
+        width: 100%;
+        padding: 15px;
+      }
+    }
+
+      </style>
+
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Welcome to RAYEN Dairy</title>
-  
+
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
@@ -49,26 +162,17 @@
               <li><a href="about.html">About Us</a></li>
               <li><a href="team.html">Team</a></li>
               <li><a href="testimonials.html">Testimonials</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
+
             </ul>
           </li>
 
           <li><a href="services.html">Services</a></li>
 
-        
+
           <li class="dropdown"><a ><span>Subsidiaries</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="Foods.html">Tara Foods</a></li>
               <li><a href="Fresh.html">Rayen Fresh</a></li>
-              <li><a href="Dairy.html">Rayen Dairy</a></li>
               <li><a href="Trading.html">Rayen Trading</a></li>
               <li><a href="Poultry.html">Rayen Poultry</a></li>
             </ul>
@@ -98,16 +202,75 @@
   <!-- About Section -->
   <div class="about-section">
     <div class="text-container">
+      <h2>About <span style="color: steelblue;">Rayen</span> Dairy</h2>
+      <p>At Rayen Dairy, we are committed to providing premium dairy products sourced from the best farms in the region. Our focus is on delivering fresh, nutritious, and sustainably produced milk, yogurt, and cheese to meet your dietary needs.</p>
+      <a href="#" class="explore-button" style="background-color: steelblue;" >Explore Our Services</a>
+
+    </div>
+
+    <!-- Accordion section -->
+    <div>
+      <div class="accordion">
+        <div class="accordion-item">
+            <button class="accordion-header" onclick="toggleAccordion(this)">Farm size:</button>
+            <div class="accordion-content">
+            <p>Whole farm - 20 Acres</p>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <button class="accordion-header" onclick="toggleAccordion(this)">Farm location:</button>
+            <div class="accordion-content">
+            <p>Muwawane Village, Chiwamba EPA, TA Chimutu, Lilongwe, Malawi.</p>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-header" onclick="toggleAccordion(this)">Incorporation Date:</button>
+          <div class="accordion-content">
+          <p>24 February</p>
+          </div>
+      </div>
+    </div>
+
+    <script>
+      function toggleAccordion(element) {
+        element.classList.toggle("active");
+        let content = element.nextElementSibling;
+        content.style.display = content.style.display === "block" ? "none" : "block";
+    }
+
+    </script>
+
+    </div>
+    <!-- End of accordion section -->
+  </div>
+  <!-- End of about section -->
+
+
+
+
+
+
+
+
+  <!-- About Section -->
+  <!-- <div class="about-section">
+    <div class="text-container">
       <h2>About Rayen Dairy</h2>
       <p>At Rayen Dairy, we are committed to providing premium dairy products sourced from the best farms in the region. Our focus is on delivering fresh, nutritious, and sustainably produced milk, yogurt, and cheese to meet your dietary needs.</p>
       <a href="#" class="explore-button">Explore Our Services</a>
     </div>
     <div style="background-image: url('assets/img/poultry/poultry.jpg');"></div>
-  </div>
+  </div> -->
+
+
+
+
 
   <!-- Products Section -->
   <div class="products-section">
-    <h2>Our Dairy Productss</h2>
+    <h2>Our <span style="color: steelblue;">Dairy</span> Products</h2>
     <div class="card-container">
       <div class="card">
         <div class="card-image" style="background-image: url('assets/img/dairy/pic-8.avif');"></div>
@@ -135,7 +298,7 @@
 
 
 
-  
+
   <!-- Our Commitment Section -->
   <div class="products-section">
     <h2>Sustainability Efforts</h2>
@@ -146,28 +309,28 @@
         <div class="card-image" style="background-image: url('assets/img/dairy/eco-friendly.jpeg');"></div>
         <div class="card-content">
           <h3>Eco-Friendly Farming</h3>
-        <p>We promote practices that conserve natural resources and reduce our carbon footprint.</p>  
+        <p>We promote practices that conserve natural resources and reduce our carbon footprint.</p>
         </div>
       </div>
       <div class="card">
         <div class="card-image" style="background-image: url('assets/img/dairy/farmer.jpeg');"></div>
         <div class="card-content">
           <h3>Supporting Local Farmers</h3>
-        <p>We work directly with farmers, ensuring fair trade practices and supporting local communities.</p>  
+        <p>We work directly with farmers, ensuring fair trade practices and supporting local communities.</p>
         </div>
       </div>
       <div class="card">
         <div class="card-image" style="background-image: url('assets/img/dairy/reduce-waste.jpg');"></div>
         <div class="card-content">
           <h3>Reducing Waste</h3>
-        <p>Our facilities are designed to minimize waste through efficient production and recycling programs.</p>  
+        <p>Our facilities are designed to minimize waste through efficient production and recycling programs.</p>
         </div>
       </div>
       <div class="card">
         <div class="card-image" style="background-image: url('assets/img/dairy/reduce-waste.jpg');"></div>
         <div class="card-content">
           <h3>Reducing Waste</h3>
-        <p>Our facilities are designed to minimize waste through efficient production and recycling programs.</p>  
+        <p>Our facilities are designed to minimize waste through efficient production and recycling programs.</p>
         </div>
       </div>
     </div>
@@ -175,129 +338,221 @@
 
 
 
+  <!-- Map Section -->
+  <div class="map-section">
+    <iframe style="border:0; width: 100%; height: 350px;" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d10000!2d33.81568729867308!3d-13.955098130901163!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1699545153407" frameborder="0" allowfullscreen></iframe>
+</div>
+  <!-- End of Map Section -->
 
-
-    </div>
+  <!-- Video section -->
+<div class="video-section" style="text-align: center;">
+  <h2>Watch <span style="color: steelblue;">Our</span> Video</h2>
+  <div class="video-container" style="display: inline-block; width: 100%; max-width: 800px; height: 500px; overflow: hidden; border-radius: 15px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+      <iframe src="https://www.youtube.com/embed/j5x4AAMsPwE"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+              style="width: 100%; height: 100%; border: none;"></iframe>
   </div>
-
 </div>
+ <!-- End of video section -->
+  <!-- Gallery section -->
+<div class="gallery-section">
+  <h2><span style="color: steelblue;">Gall</span>ery</h2>
+  <div class="gallery-container">
+      <div class="gallery-item">
+          <img src="assets/img/dairy/yoghurt.jpg" alt="Fresh Local Produce">
+      </div>
+      <div class="gallery-item">
+          <img src="assets/img/dairy/farmer.jpeg" alt="Factory Worker Inspecting Products">
+      </div>
+      <div class="gallery-item">
+          <img src="assets/img/dairy/eco-friendly.jpeg" alt="Farmers Harvesting Crops">
+      </div>
+  </div>
 </div>
-
-
-
-
-
-
+<!-- End of Gallery section -->
 
 <!-- Testimonials Section -->
-<section id="testimonials" class="testimonials-section">
-  <div class="container">
-    <h2 class="section-heading">What Our Customers Are Saying</h2>
-    <div class="testimonial-container">
-      <div class="testimonial">
-        <div class="profile">
-          <img src="assets/img/testimonials/testimonials-1.jpg" alt="Saul Goodman">
-        </div>
-        <div class="content">
-          <h3>Johna Chirambo</h3>
-          <p class="role">Customer.</p>
-          <p class="quote">Their dairy products are of the highest quality. I particularly love their yogurt—it’s smooth and delicious!</p>
-        </div>
-      </div>
-      <div class="testimonial">
-        <div class="profile">
-          <img src="assets/img/testimonials/testimonials-2.jpg" alt="Sara Wilsson">
-        </div>
-        <div class="content">
-          <h3>Susan Kadama</h3>
-          <p class="role">Customer</p>
-          <p class="quote">Tara Foods always delivers the freshest products! I’m never disappointed with their produce. Highly recommended!</p>
-        </div>
-      </div>
+<div class="testimonial-container">
+  <h2>What <span style="color: steelblue;">Our</span> Customers <span style="color: steelblue;">Say</span></h3>
+  <div class="testimonial-slide active">
+    <img src="assets/img/testimonials/testimonials-1.jpg" alt="User photo">
+    <p class="testimonial-text">
+      "Tara Foods always delivers the freshest products! I’m never disappointed with their produce. Highly recommended!"
+      </p>
+    <p class="testimonial-name">Johna Chirambo</p>
+    <p class="testimonial-source">Customer</p>
+  </div>
 
-      <div class="testimonial">
-        <div class="profile">
-          <img src="assets/img/testimonials/testimonials-2.jpg" alt="Sara Wilsson">
+  <div class="testimonial-slide">
+    <img src="assets/img/testimonials/testimonials-2.jpg" alt="User photo">
+    <p class="testimonial-text">
+      "Their dairy products are of the highest quality. I particularly love their yogurt—it’s smooth and delicious!"
+    </p>
+    <p class="testimonial-name">Susan Kadama</p>
+    <p class="testimonial-source">Customer</p>
+  </div>
+
+
+  <div class="testimonial-slide">
+    <img src="assets/img/testimonials/testimonials-5.jpg" alt="User photo">
+    <p class="testimonial-text">
+      "Great service, excellent products, and they care about the environment. Tara Foods is my go-to!"</p>
+    <p class="testimonial-name">Micheal Kankwatila</p>
+    <p class="testimonial-source">Customer</p>
+  </div>
+
+  <!-- Arrows for navigation -->
+  <span class="arrow-left" onclick="prevSlide()">&#10094;</span>
+  <span class="arrow-right" onclick="nextSlide()">&#10095;</span>
+</div>
+
+<script>
+  let currentSlide = 0;
+  const slides = document.querySelectorAll('.testimonial-slide');
+
+  function showSlide(index) {
+    slides.forEach((slide, i) => {
+      slide.classList.toggle('active', i === index);
+    });
+  }
+
+  function nextSlide() {
+    currentSlide = (currentSlide + 1) % slides.length;
+    showSlide(currentSlide);
+  }
+
+  function prevSlide() {
+    currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+    showSlide(currentSlide);
+  }
+
+  // Optional: Auto-slide every 5 seconds
+  setInterval(nextSlide, 5000);
+</script>
+<!-- End of Testimonials Section -->
+   <br>
+
+
+
+
+
+   <div class="row mb-4 justify-content-center">
+    <div class="col-lg-10">
+      <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+        <h3>Contact Us</h3> <!-- Optional heading for clarity -->
+        <div class="row">
+          <div class="col-md-6 form-group">
+            <input type="text" name="name" class="form-control" id="name" placeholder="Name" required>
+          </div>
+          <div class="col-md-6 form-group mt-3 mt-md-0">
+            <input type="email" class="form-control" name="email" id="email" placeholder="Email" required>
+          </div>
         </div>
-        <div class="content">
-          <h3>Micheal Kankwatila</h3>
-          <p class="role">Customer</p>
-          <p class="quote">Great service, excellent products, and they care about the environment. Tara Foods is my go-to!</p>
+        <div class="form-group mt-3">
+          <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
         </div>
-      </div>
-      
+        <div class="form-group mt-3">
+          <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+        </div>
+        <div class="my-3">
+          <div class="loading">Loading</div>
+          <div class="error-message"></div>
+          <div class="sent-message">Your message has been sent. Thank you!</div>
+        </div>
+        <div class="text-center">
+          <button type="submit">Send Message</button>
+        </div>
+      </form>
     </div>
   </div>
-</section>
-<!-- End of Testimonials Section -->
 
-    <!-- ======= Footer ======= -->
-    <footer id="footer">
 
-      <div class="footer-top">
-        <div class="container">
-          <div class="row">
-  
-            <div class="col-lg-3 col-md-6 footer-contact">
-              <h3>Rayen Limited</h3>
-              <p>
-                Synergy Co-Works, <br>
-                Plot 526, Songwe Street,<br>
-                New Area 12, Lilongwe, Malawi. <br><br>
-                <strong>Phone:</strong> <br> +265 99 440 74 51<br> +265995076818 <br>
-                <br><strong>Email:</strong> <br> lyndon@rayenlimited.com<br>jacque@rayenlimited.com <br>
-              </p>
-            </div>
-  
-            <div class="col-lg-2 col-md-6 footer-links">
-              <h4>Useful Links</h4>
-              <ul>
-                <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-                <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-                <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-                <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-                <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
-              </ul>
-            </div>
-  
-            <div class="col-lg-3 col-md-6 footer-links">
-              <h4>Our Services</h4>
-              <ul>
-                <li><i class="bx bx-chevron-right"></i> <a href="#">Management Services</a></li>
-                <li><i class="bx bx-chevron-right"></i> <a href="#">Venture Capital Financing</a></li>
-                <li><i class="bx bx-chevron-right"></i> <a href="#">Dept Financing</a></li>
-                <li><i class="bx bx-chevron-right"></i> <a href="#">Private Equity</a></li>
-              </ul>
-            </div>
-  
-  
+
+
+
+
+
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3><span style="color: steelblue;">Rayen</span> Limited</h3>
+
+            <p>
+              Synergy Co-Works, <br>
+              Plot 526, Songwe Street,<br>
+              New Area 12, Lilongwe, Malawi. <br><br>
+              <strong>Phone:</strong>+265 99 440 74 51<br>
+              <strong>Email:</strong>lyndon@rayenlimited.com<br>
+            </p>
           </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Subsidiaries</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Management Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Venture Capital Financing</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Dept Financing</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Private Equity</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Subsidiaries</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="Foods.html">Tara Foods Ltd</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="Dairy.html">Rayen Dairy Ltd</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="Poultry.html">Rayen Poultry Ltd</a></li>
+
+            </ul>
+          </div>
+
+
         </div>
       </div>
-  
-      <div class="container d-md-flex py-4">
-  
-        <div class="me-md-auto text-center text-md-start">
-          <div class="copyright">
-            &copy; Copyright <strong><span>Rayen Limited</span></strong>. All Rights Reserved
-          </div>
-          <div class="credits">
-            <!-- All the links in the footer should remain intact. -->
-            <!-- You can delete the links only if you purchased the pro version. -->
-            <!-- Licensing information: https://bootstrapmade.com/license/ -->
-            <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/company-free-html-bootstrap-template/ -->
-            Designed by <a href="https://gusherlabs.com">GusherLabs</a>
-          </div>
-        </div>
-        <div class="social-links text-center text-md-right pt-3 pt-md-0">
-          <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-          <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-          <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-          <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-          <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+    </div>
+
+    <div class="container d-md-flex py-4">
+
+      <div class="me-md-auto text-center text-md-start">
+        <div class="copyright">
+          &copy; Copyright <strong><span style="color: steelblue;">Rayen Limited</span></strong>. All Rights Reserved
         </div>
       </div>
-    </footer><!-- End Footer -->
-  
+      <div class="social-links text-center text-md-right pt-3 pt-md-0">
+        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+
+
+
+
+
+
+
 </body>
 </html>

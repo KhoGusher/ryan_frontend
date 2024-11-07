@@ -1,11 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+
+
+
+  <style>
+
+
+/* General form styling */
+.php-email-form {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.php-email-form h3 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Form inputs */
+.php-email-form .form-control {
+  height: 50px;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+  color: #333;
+  border: 1px solid #ccc;
+  transition: border-color 0.3s ease;
+}
+
+.php-email-form .form-control:focus {
+  border-color: steelblue;
+  box-shadow: 0 0 10px rgba(70, 130, 180, 0.5);
+  outline: none;
+}
+
+/* Textarea styling */
+.php-email-form textarea.form-control {
+  resize: vertical;
+}
+
+/* Form button */
+.php-email-form button[type="submit"] {
+  background-color: steelblue;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.php-email-form button[type="submit"]:hover {
+  background-color: #4169e1;
+}
+
+/* Error message and success message */
+.php-email-form .loading,
+.php-email-form .error-message,
+.php-email-form .sent-message {
+  display: none;
+}
+
+.php-email-form .sent-message {
+  color: #28a745;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.php-email-form .error-message {
+  color: #e74c3c;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.php-email-form .loading {
+  color: #f39c12;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+/* Styling for form groups */
+.php-email-form .form-group {
+  margin-bottom: 20px;
+}
+
+.php-email-form .form-group input,
+.php-email-form .form-group textarea {
+  width: 100%;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .php-email-form {
+    padding: 30px;
+  }
+
+  .php-email-form h3 {
+    font-size: 20px;
+  }
+
+  .php-email-form button[type="submit"] {
+    width: 100%;
+    padding: 15px;
+  }
+}
+
+  </style>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Welcome to Tara Foods</title>
-  
-  
+
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
@@ -23,57 +136,19 @@
   <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
+
+
+  <!-- In your new page, ensure these links are included -->
+<link href="assets/css/style.css" rel="stylesheet">
+<link href="assets/vendor/aos/aos.css" rel="stylesheet">
+<script src="assets/vendor/aos/aos.js"></script>
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
 </head>
-
-<style>
-  .gallery-section {
-    text-align: center;
-    padding: 50px;
-    background-color: #f7f8fa;
-}
-
-.gallery-section h2 {
-    font-size: 2rem;
-    color: #333;
-    margin-bottom: 20px;
-    font-weight: bold;
-}
-
-.gallery-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 15px;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.gallery-item {
-    position: relative;
-    overflow: hidden;
-    border-radius: 8px;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-}
-
-.gallery-item img {
-    width: 100%;
-    height: auto;
-    transition: transform 0.4s ease;
-    object-fit: cover;
-}
-
-.gallery-item:hover img {
-    transform: scale(1.1);
-}
-
-.gallery-item:hover {
-    transform: translateY(-5px);
-}
-
-</style>
 <body>
 
       <!-- ======= Header ======= -->
@@ -93,24 +168,15 @@
               <li><a href="about.html">About Us</a></li>
               <li><a href="team.html">Team</a></li>
               <li><a href="testimonials.html">Testimonials</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
+
             </ul>
           </li>
 
           <li><a href="services.html">Services</a></li>
 
-        
+
           <li class="dropdown"><a ><span>Subsidiaries</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a href="Foods.html">Tara Foods</a></li>
               <li><a href="Fresh.html">Rayen Fresh</a></li>
               <li><a href="Dairy.html">Rayen Dairy</a></li>
               <li><a href="Trading.html">Rayen Trading</a></li>
@@ -139,87 +205,57 @@
     <div class="welcome-text">Welcome To Tara Foods</div>
   </div>
 
- 
+  <!-- About Section -->
+  <div class="about-section">
+    <div class="text-container">
+      <h2>About <span style="color: steelblue;">Tara</span> Foods</h2>
+      <p>Tara Foods Ltd is dedicated to delivering fresh, high-quality food products to households and businesses across the region. with focus on sustainability and local sourcing, we ensure that every product is crafted with care and delivered with passion</p>
+      <a href="#" class="explore-button" style="background-color: steelblue;" >Explore Our Services</a>
 
-
-  <section class="pt-0">
-    <div class="container">
- <!-- About Section -->
- <div class="about-section container">
-  <div class="text-container">
-    <h2>About Tara Foods Ltd</h2>
-    <p> Tara Foods Ltd, incorporated on 25/10/2018, is dedicated to delivering fresh, high-quality food products to households and businesses across the region. With a focus on sustainability and local sourcing, we ensure that every product is crafted with care and delivered with passion which covers <span style="color: steelblue;"><b>20 Acres of land</b></span> .</p>
-    <!-- <a href="#" class="explore-button" style="background-color: steelblue;" >Explore Our Services</a> -->
-    <!-- in coperation date :Incorporation Date -->
-
-  </div>
-  <!-- <div style="background-image: url('assets/img/poultry/poultry.jpg');"></div> -->
-</div>
-
-        <div class="row align-items-center">
-            <div class="col-lg-6 mb-4 mb-lg-0">
-                <div class="about-img position-relative">
-                    <div class="image-box">
-                        <div class="image-1"><img src="assets/img/image.png" class="rounded" alt="..."></div>
-                        <!-- <div class="image-2"><img src="assets/img/foods/pic-2.webp" class="rounded" alt="..."></div> -->
-                    </div>
-                    <!-- <div class="about-box"  style="background-color: #4682B4;">
-                        <h3 class="h1 text-white">4+</h3>
-                        <p class="mb-0 text-white">Years of Experience</p>
-                    </div> -->
-                </div>
-            </div>
-            <div class="col-lg-6 ps-lg-4 ps-xl-7">
-                <div class="content-box">
-                    <div class="row border-md-bottom clearfix pb-md-5 mb-5 mb-md-7">
-                        <div class="tab-style1 horizontaltab">
-                           
-                            <div class="resp-tabs-container hor_1">
-                              <div class="text-center mb-5">
-                                <h2 class=""><span style="color: steelblue;">Primary</span> Interest</h2>
-                                <p>Bananas, Maize and Flour Trading, Pig Production</p>
-                              </div>
-
-                              <div class="text-center mb-5">
-                                <h2 class="">Secondary <span style="color: steelblue;">Interest</span> </h2>
-                                <p>Knowledge and practical training centre for students and local farmers, job provision to the youth and women.</p>
-                              </div>
-
-                              <div class="text-center mb-5">
-                                <h2 class=""><span style="color: steelblue;">Tarrget</span> Market</h2>
-                                <p>Middle class consumers, Institutions and sister companies.</p>
-                              </div>
-
-
-                              <!-- <div class="text-center"> <a href="about.html" class="btn-get-started">More About Us</a> </div> -->
-                             
-
-                            </div>
-                        </div>
-                    </div>
-            </div>
-        </div>
     </div>
 
+    <!-- Accordion section -->
+    <div>
+      <div class="accordion">
+        <div class="accordion-item">
+            <button class="accordion-header" onclick="toggleAccordion(this)">Farm size:</button>
+            <div class="accordion-content">
+            <p>Whole farm - 20 Acres</p>
+            </div>
+        </div>
 
-<!-- Video section -->
-<div class="video-section" style="text-align: center;">
-  <h2>Our Story</h2>
-  <div class="video-container" style="display: inline-block; width: 100%; max-width: 800px; height: 500px; overflow: hidden; border-radius: 15px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
-      <iframe src="https://www.youtube.com/embed/j5x4AAMsPwE" 
-              title="YouTube video player" 
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-              allowfullscreen
-              style="width: 100%; height: 100%; border: none;"></iframe>
+        <div class="accordion-item">
+            <button class="accordion-header" onclick="toggleAccordion(this)">Farm location:</button>
+            <div class="accordion-content">
+            <p>Muwawane Village, Chiwamba EPA, TA Chimutu, Lilongwe, Malawi.</p>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-header" onclick="toggleAccordion(this)">Incorporation Date:</button>
+          <div class="accordion-content">
+          <p>18 October</p>
+          </div>
+      </div>
+    </div>
+
+    <script>
+      function toggleAccordion(element) {
+        element.classList.toggle("active");
+        let content = element.nextElementSibling;
+        content.style.display = content.style.display === "block" ? "none" : "block";
+    }
+
+    </script>
+
+    </div>
+    <!-- End of accordion section -->
   </div>
-</div>
- <!-- End of video section -->
-
-
+  <!-- End of about section -->
 
   <!-- Products Section -->
-  <!-- <div class="products-section">
-    <h2>Our Products</h2>
+  <div class="products-section">
+    <h2><span style="color: steelblue;">Our</span> Products</h2>
     <div class="card-container">
       <div class="card">
         <div class="card-image" style="background-image: url('assets/img/foods/pic-3.jpg');"></div>
@@ -244,202 +280,243 @@
           </div>
       </div>
     </div>
-  </div> -->
+  </div>
 
   <!-- Our Commitment Section -->
   <div class="products-section">
-    <h2>Our Mission ,Vission & Values</h2>
+    <h2><span style="color: steelblue;">Our</span> Mission <span style="color: steelblue;">&</span> Values</h2>
     <p>At Tara Foods, we are committed to providing nutritious, high-quality food while upholding the values of sustainability, community support, and transparency. We believe in contributing to a healthier, more sustainable food system.</p>
     <div class="card-container">
       <div class="card">
-        <!-- <div class="card-image" style="background-image: url('assets/img/foods/pic-2.webp');"></div> -->
+        <div class="card-image" style="background-image: url('assets/img/foods/pic-2.webp');"></div>
         <div class="card-content">
-          <h3>Mission</h3>
-        <p>Our purpose is to be the food provider of choice through accessible, affordable and reliable supply. We aspire to be the most sustainable social, environmental and financially viable business in the diversified foods industry within Malawi and the region.</p> 
+          <h3>Sustainability</h3>
+        <p>We strive to reduce our environmental impact through responsible sourcing and eco-friendly practices.</p>
         </div>
       </div>
       <div class="card">
-        <!-- <div class="card-image" style="background-image: url('assets/img/foods/pic-1.jpg');"></div> -->
+        <div class="card-image" style="background-image: url('assets/img/foods/pic-1.jpg');"></div>
         <div class="card-content">
-          <h3> Vison</h3>
-        <p>We envision a Malawi that’s able to produce and export high quality food products.</p>  
+          <h3>Quality</h3>
+        <p>Every product is carefully sourced, processed, and delivered to ensure the highest quality standards.</p>
         </div>
       </div>
       <div class="card">
-        <!-- <div class="card-image" style="background-image: url('assets/img/foods/pic-7.jpeg');"></div> -->
+        <div class="card-image" style="background-image: url('assets/img/foods/pic-7.jpeg');"></div>
         <div class="card-content">
-          <h3>Values</h3>
-        <p>We are dedicated to supporting local farmers and contributing to the well-being of our community.</p>  
+          <h3>Community</h3>
+        <p>We are dedicated to supporting local farmers and contributing to the well-being of our community.</p>
         </div>
       </div>
-
-      
-      
     </div>
   </div>
 
-
   <!-- Map Section -->
-  <h2>Our Location</h2>
-
-  Muwawane Village, Chiwamba EPA, TA Chimutu, Lilongwe, Malawi.
-
   <div class="map-section">
     <iframe style="border:0; width: 100%; height: 350px;" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d10000!2d33.81568729867308!3d-13.955098130901163!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1699545153407" frameborder="0" allowfullscreen></iframe>
 </div>
   <!-- End of Map Section -->
 
-<br>
-  <!-- Testimonials Section -->
-  <h2>Testimonials</h2>
-  <div class="testimonial-container">
-    
-    <div class="testimonial-slide active">
-      <img src="assets/img/p.jpg" alt="User photo">
-      <p class="testimonial-text">
-        "Exceptional service and insightful guidance. Rayen Ltd truly lives up to their promise as trusted partners in growth.Rayen Ltd’s team transformed our operations with strategic advice and hands-on support. Highly recommended!"
-      </p>
-      <p class="testimonial-name">Pachawo Bisani</p>
-    </div>
-    <!-- Additional testimonial slides -->
-    <div class="testimonial-slide">
-      <img src="assets/img/a.jpg" alt="User photo">
-      <p class="testimonial-text">
-        "Rayen Ltd has been instrumental in our growth journey. Their expertise and support have exceeded our expectations!,Rayen Ltd’s team transformed our operations with strategic advice and hands-on support. Highly recommended!"
-      </p>
-      <p class="testimonial-name">Atusaghe Mushani</p>
-    </div>
-  
-    <!-- Arrows for navigation -->
-    <span class="arrow-left" onclick="prevSlide()">&#10094;</span>
-    <span class="arrow-right" onclick="nextSlide()">&#10095;</span>
-  </div>
-  
-  <script>
-    let currentSlide = 0;
-    const slides = document.querySelectorAll('.testimonial-slide');
-  
-    function showSlide(index) {
-      slides.forEach((slide, i) => {
-        slide.classList.toggle('active', i === index);
-      });
-    }
-  
-    function nextSlide() {
-      currentSlide = (currentSlide + 1) % slides.length;
-      showSlide(currentSlide);
-    }
-  
-    function prevSlide() {
-      currentSlide = (currentSlide - 1 + slides.length) % slides.length;
-      showSlide(currentSlide);
-    }
-  
-    // Optional: Auto-slide every 5 seconds
-    setInterval(nextSlide, 5000);
-  </script>
-  <!-- End of Testimonials Section -->
-  <br>
-
-<!-- Gallery section -->
-<div class="gallery-section">
-  <h2>Our Gallery</h2>
-  <div class="gallery-container">
-      <div class="gallery-item">
-          <img src="assets/img/11.jpg" alt="Fresh Local Produce">
-      </div>
-      <div class="gallery-item">
-          <img src="assets/img/2.JPG" alt="Factory Worker Inspecting Products">
-      </div>
-      <div class="gallery-item">
-        <img src="assets/img/3.jpg" alt="Fresh Local Produce">
-    </div>
-      <div class="gallery-item">
-          <img src="assets/img/4.jpg" alt="Farmers Harvesting Crops">
-      </div>
-      <div class="gallery-item">
-        <img src="assets/img/5.JPG" alt="Farmers Harvesting Crops">
-    </div>
-      <div class="gallery-item">
-        <img src="assets/img/6.JPG" alt="Farmers Harvesting Crops">
-    </div>
-      <div class="gallery-item">
-        <img src="assets/img/7.jpg" alt="Farmers Harvesting Crops">
-    </div>
-    <div class="gallery-item">
-      <img src="assets/img/8.JPG" alt="Farmers Harvesting Crops">
-  </div>
+  <!-- Video section -->
+<div class="video-section" style="text-align: center;">
+  <h2>Watch <span style="color: steelblue;">Our</span> Video</h2>
+  <div class="video-container" style="display: inline-block; width: 100%; max-width: 800px; height: 500px; overflow: hidden; border-radius: 15px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+      <iframe src="https://www.youtube.com/embed/j5x4AAMsPwE"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+              style="width: 100%; height: 100%; border: none;"></iframe>
   </div>
 </div>
-
+ <!-- End of video section -->
+  <!-- Gallery section -->
+<div class="gallery-section">
+  <h2><span style="color: steelblue;">Gall</span>ery</h2>
+  <div class="gallery-container">
+      <div class="gallery-item">
+          <img src="assets/img/foods/pic-1.jpg" alt="Fresh Local Produce">
+      </div>
+      <div class="gallery-item">
+          <img src="assets/img/foods/pic-2.webp" alt="Factory Worker Inspecting Products">
+      </div>
+      <div class="gallery-item">
+          <img src="assets/img/foods/pic-3.jpg" alt="Farmers Harvesting Crops">
+      </div>
+  </div>
+</div>
 <!-- End of Gallery section -->
-    <!-- ======= Footer ======= -->
-    <footer id="footer">
 
-      <div class="footer-top">
-        <div class="container">
-          <div class="row">
-  
-            <div class="col-lg-3 col-md-6 footer-contact">
-              <h3>Rayen Limited</h3>
-              <p>
-                Synergy Co-Works, <br>
-                Plot 526, Songwe Street,<br>
-                New Area 12, Lilongwe, Malawi. <br><br>
-                <strong>Phone:</strong> <br> +265 99 440 74 51<br> +265995076818 <br>
-                <br><strong>Email:</strong> <br> lyndon@rayenlimited.com<br>jacque@rayenlimited.com <br>
-              </p>
-            </div>
-  
-            <div class="col-lg-2 col-md-6 footer-links">
-              <h4>Useful Links</h4>
-              <ul>
-                <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-                <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-                <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-                <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-                <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
-              </ul>
-            </div>
-  
-            <div class="col-lg-3 col-md-6 footer-links">
-              <h4>Our Services</h4>
-              <ul>
-                <li><i class="bx bx-chevron-right"></i> <a href="#">Management Services</a></li>
-                <li><i class="bx bx-chevron-right"></i> <a href="#">Venture Capital Financing</a></li>
-                <li><i class="bx bx-chevron-right"></i> <a href="#">Dept Financing</a></li>
-                <li><i class="bx bx-chevron-right"></i> <a href="#">Private Equity</a></li>
-              </ul>
-            </div>
-  
-  
+<!-- Testimonials Section -->
+<div class="testimonial-container">
+  <h2>What <span style="color: steelblue;">Our</span> Customers <span style="color: steelblue;">Say</span></h3>
+  <div class="testimonial-slide active">
+    <img src="assets/img/testimonials/testimonials-1.jpg" alt="User photo">
+    <p class="testimonial-text">
+      "Tara Foods always delivers the freshest products! I’m never disappointed with their produce. Highly recommended!"
+      </p>
+    <p class="testimonial-name">Johna Chirambo</p>
+    <p class="testimonial-source">Customer</p>
+  </div>
+
+  <div class="testimonial-slide">
+    <img src="assets/img/testimonials/testimonials-2.jpg" alt="User photo">
+    <p class="testimonial-text">
+      "Their dairy products are of the highest quality. I particularly love their yogurt—it’s smooth and delicious!"
+    </p>
+    <p class="testimonial-name">Susan Kadama</p>
+    <p class="testimonial-source">Customer</p>
+  </div>
+
+
+  <div class="testimonial-slide">
+    <img src="assets/img/testimonials/testimonials-5.jpg" alt="User photo">
+    <p class="testimonial-text">
+      "Great service, excellent products, and they care about the environment. Tara Foods is my go-to!"</p>
+    <p class="testimonial-name">Micheal Kankwatila</p>
+    <p class="testimonial-source">Customer</p>
+  </div>
+
+  <!-- Arrows for navigation -->
+  <span class="arrow-left" onclick="prevSlide()">&#10094;</span>
+  <span class="arrow-right" onclick="nextSlide()">&#10095;</span>
+</div>
+
+
+
+<script>
+  let currentSlide = 0;
+  const slides = document.querySelectorAll('.testimonial-slide');
+
+  function showSlide(index) {
+    slides.forEach((slide, i) => {
+      slide.classList.toggle('active', i === index);
+    });
+  }
+
+  function nextSlide() {
+    currentSlide = (currentSlide + 1) % slides.length;
+    showSlide(currentSlide);
+  }
+
+  function prevSlide() {
+    currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+    showSlide(currentSlide);
+  }
+
+  // Optional: Auto-slide every 5 seconds
+  setInterval(nextSlide, 5000);
+</script>
+<!-- End of Testimonials Section -->
+   <br>
+
+
+
+
+
+
+   <div class="row mb-4 justify-content-center">
+    <div class="col-lg-10">
+      <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+        <h3>Contact Us</h3> <!-- Optional heading for clarity -->
+        <div class="row">
+          <div class="col-md-6 form-group">
+            <input type="text" name="name" class="form-control" id="name" placeholder="Name" required>
           </div>
+          <div class="col-md-6 form-group mt-3 mt-md-0">
+            <input type="email" class="form-control" name="email" id="email" placeholder="Email" required>
+          </div>
+        </div>
+        <div class="form-group mt-3">
+          <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+        </div>
+        <div class="form-group mt-3">
+          <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+        </div>
+        <div class="my-3">
+          <div class="loading">Loading</div>
+          <div class="error-message"></div>
+          <div class="sent-message">Your message has been sent. Thank you!</div>
+        </div>
+        <div class="text-center">
+          <button type="submit">Send Message</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3><span style="color: steelblue;">Rayen</span> Limited</h3>
+
+            <p>
+              Synergy Co-Works, <br>
+              Plot 526, Songwe Street,<br>
+              New Area 12, Lilongwe, Malawi. <br><br>
+              <strong>Phone:</strong>+265 99 440 74 51<br>
+              <strong>Email:</strong>lyndon@rayenlimited.com<br>
+            </p>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Subsidiaries</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Management Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Venture Capital Financing</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Dept Financing</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Private Equity</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Subsidiaries</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="Foods.html">Tara Foods Ltd</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="Dairy.html">Rayen Dairy Ltd</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="Poultry.html">Rayen Poultry Ltd</a></li>
+
+            </ul>
+          </div>
+
+
         </div>
       </div>
-  
-      <div class="container d-md-flex py-4">
-  
-        <div class="me-md-auto text-center text-md-start">
-          <div class="copyright">
-            &copy; Copyright <strong><span>Rayen Limited</span></strong>. All Rights Reserved
-          </div>
-          <div class="credits">
-            <!-- All the links in the footer should remain intact. -->
-            <!-- You can delete the links only if you purchased the pro version. -->
-            <!-- Licensing information: https://bootstrapmade.com/license/ -->
-            <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/company-free-html-bootstrap-template/ -->
-            <!-- Designed by <a href="https://gusherlabs.com">GusherLabs</a> -->
-          </div>
-        </div>
-        <div class="social-links text-center text-md-right pt-3 pt-md-0">
-          <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-          <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-          <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-          <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-          <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+    </div>
+
+    <div class="container d-md-flex py-4">
+
+      <div class="me-md-auto text-center text-md-start">
+        <div class="copyright">
+          &copy; Copyright <strong><span style="color: steelblue;">Rayen Limited</span></strong>. All Rights Reserved
         </div>
       </div>
-    </footer><!-- End Footer -->
-  
+      <div class="social-links text-center text-md-right pt-3 pt-md-0">
+        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
 </body>
 </html>
