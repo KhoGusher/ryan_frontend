@@ -45,15 +45,7 @@
               <li><a href="about.html">About Us</a></li>
               <li><a href="team.html">Team</a></li>
               <li><a href="testimonials.html">Testimonials</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
+
             </ul>
           </li>
 
@@ -63,9 +55,7 @@
           <li class="dropdown"><a ><span>Subsidiaries</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="Foods.html">Tara Foods</a></li>
-              <li><a href="Fresh.html">Rayen Fresh</a></li>
               <li><a href="Dairy.html">Rayen Dairy</a></li>
-              <li><a href="Trading.html">Rayen Trading</a></li>
               <li><a href="Poultry.html">Rayen Poultry</a></li>
             </ul>
         </li>
@@ -96,10 +86,112 @@
     <div class="text-container">
       <h2>About Rayen Poultry</h2>
       <p>Rayen Poultry is dedicated to raising and delivering the finest poultry products in the region. Our farms follow best practices in poultry farming, ensuring that our chickens are raised in a humane, healthy environment. From free-range eggs to high-quality meat, Rayen Poultry provides nutritious options for your family.</p>
-      <a href="#" class="explore-button">Explore Our Services</a>
+      <!-- <a href="#" class="explore-button" style="background-color: steelblue;" >Explore Our Services</a> -->
+
     </div>
-    <div style="background-image: url('assets/img/poultry/poultry.jpg');"></div>
+
+    <!-- Accordion section -->
+    <div>
+      <div class="accordion">
+        <div class="accordion-item">
+            <button class="accordion-header" onclick="toggleAccordion(this)">Farm size:</button>
+            <div class="accordion-content">
+            <p>Whole farm - 20 Acres</p>    
+            </div>
+        </div>
+        
+        <div class="accordion-item">
+            <button class="accordion-header" onclick="toggleAccordion(this)">Farm location:</button>
+            <div class="accordion-content">
+            <p>Muwawane Village, Chiwamba EPA, TA Chimutu, Lilongwe, Malawi.</p>    
+            </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-header" onclick="toggleAccordion(this)">Incorporation Date:</button>
+          <div class="accordion-content">
+          <p>23 December</p>    
+          </div>
+      </div>
+    </div>
+    
+    <script>
+      function toggleAccordion(element) {
+        element.classList.toggle("active");
+        let content = element.nextElementSibling;
+        content.style.display = content.style.display === "block" ? "none" : "block";
+    }
+    
+    </script>
+    
+    </div>
+    <!-- End of accordion section -->
   </div>
+  <!-- End of about section -->
+
+<!-- Primary and secondary interest and target market secondary -->
+<div class="row align-items-center">
+  <div class="col-lg-6 mb-4 mb-lg-0">
+      <div class="about-img position-relative">
+          <div class="image-box">
+              <div class="image-1"><img src="assets/img/foods/pic-1.jpg" class="rounded" alt="..."></div>
+              <!-- <div class="image-2"><img src="assets/img/foods/pic-2.webp" class="rounded" alt="..."></div> -->
+          </div>
+          <!-- <div class="about-box"  style="background-color: #4682B4;">
+              <h3 class="h1 text-white">4+</h3>
+              <p class="mb-0 text-white">Years of Experience</p>
+          </div> -->
+      </div>
+  </div>
+  <div class="col-lg-6 ps-lg-4 ps-xl-7">
+      <div class="content-box">
+          <div class="row border-md-bottom clearfix pb-md-5 mb-5 mb-md-7">
+              <div class="tab-style1 horizontaltab">
+                 
+                  <div class="resp-tabs-container hor_1" style="margin-top: 50px;">
+                    <div class="text-center mb-5">
+                      <h2 class=""><span style="color: steelblue;">Primary</span> Interest</h2>
+                      <p>Bananas, Maize and Flour Trading, Pig Production</p>
+                    </div>
+
+                    <div class="text-center mb-5">
+                      <h2 class="">Secondary <span style="color: steelblue;">Interest</span> </h2>
+                      <p>Knowledge and practical training centre for students and local farmers, job provision to the youth and women.</p>
+                    </div>
+
+                    <div class="text-center mb-5">
+                      <h2 class=""><span style="color: steelblue;">Target</span> Market</h2>
+                      <p>Middle class consumers, Institutions and sister companies.</p>
+                    </div>
+
+
+                    <!-- <div class="text-center"> <a href="about.html" class="btn-get-started">More About Us</a> </div> -->
+                   
+
+                  </div>
+              </div>
+          </div>
+  </div>
+</div>
+</div>
+<!-- End of Primary and secondary interest and target market secondary -->
+
+<!-- Video section -->
+<div class="video-section" style="text-align: center;">
+<h2> <span>Our</span> Story</h2>
+<div class="video-container" style="display: inline-block; width: 100%; max-width: 800px; height: 500px; overflow: hidden; border-radius: 15px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+<iframe src="https://www.youtube.com/embed/j5x4AAMsPwE" 
+    title="YouTube video player" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen
+    style="width: 100%; height: 100%; border: none;"></iframe>
+</div>
+</div>
+<!-- End of video section -->
+
+
+
+
 
   <!-- Products Section -->
   <div class="products-section">
@@ -159,52 +251,147 @@
   </div>
 
 
+  <!-- Map Section -->
 
-<!-- Testimonials Section -->
-<section id="testimonials" class="testimonials-section">
-  <div class="container">
-    <h2 class="section-heading">What Our Customers Are Saying</h2>
-    <div class="testimonial-container">
-      <div class="testimonial">
-        <div class="profile">
-          <img src="assets/img/testimonials/testimonials-1.jpg" alt="Saul Goodman">
-        </div>
-        <div class="content">
-          <h3>Johna Chirambo</h3>
-          <p class="role">Customer.</p>
-          <p class="quote">Their dairy products are of the highest quality. I particularly love their yogurt—it’s smooth and delicious!</p>
-        </div>
-      </div>
-      <div class="testimonial">
-        <div class="profile">
-          <img src="assets/img/testimonials/testimonials-2.jpg" alt="Sara Wilsson">
-        </div>
-        <div class="content">
-          <h3>Susan Kadama</h3>
-          <p class="role">Customer</p>
-          <p class="quote">Tara Foods always delivers the freshest products! I’m never disappointed with their produce. Highly recommended!</p>
-        </div>
-      </div>
-
-      <div class="testimonial">
-        <div class="profile">
-          <img src="assets/img/testimonials/testimonials-2.jpg" alt="Sara Wilsson">
-        </div>
-        <div class="content">
-          <h3>Micheal Kankwatila</h3>
-          <p class="role">Customer</p>
-          <p class="quote">Great service, excellent products, and they care about the environment. Tara Foods is my go-to!</p>
-        </div>
-      </div>
-      
+  <div class="map-section">
+    <div style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+      <h2>Our <span style="color: steelblue;">Location</span></h2>
+      <p>
+        Muwawane Village, Chiwamba EPA, TA Chimutu, Lilongwe, Malawi.
+      </p>
     </div>
+    
+    
+    <iframe style="border:0; width: 100%; height: 350px;" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d10000!2d33.81568729867308!3d-13.955098130901163!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1699545153407" frameborder="0" allowfullscreen></iframe>
+</div>
+  <!-- End of Map Section -->
+
+  <!-- Testimonials Section -->
+   <br>
+<div class="testimonial-container">
+  <h2>What <span style="color: steelblue;">Our</span> Customers <span style="color: steelblue;">Say</span></h3>
+  <div class="testimonial-slide active">
+    <img src="assets/img/testimonials/testimonials-1.jpg" alt="User photo">
+    <p class="testimonial-text">
+      "Tara Foods always delivers the freshest products! I’m never disappointed with their produce. Highly recommended!"
+      </p>
+    <p class="testimonial-name">Johna Chirambo</p>
+    <p class="testimonial-source">Customer</p>
   </div>
-</section>
+
+  <div class="testimonial-slide">
+    <img src="assets/img/testimonials/testimonials-2.jpg" alt="User photo">
+    <p class="testimonial-text">
+      "Their dairy products are of the highest quality. I particularly love their yogurt—it’s smooth and delicious!"
+    </p>
+    <p class="testimonial-name">Susan Kadama</p>
+    <p class="testimonial-source">Customer</p>
+  </div>
+
+
+  <div class="testimonial-slide">
+    <img src="assets/img/testimonials/testimonials-5.jpg" alt="User photo">
+    <p class="testimonial-text">
+      "Great service, excellent products, and they care about the environment. Tara Foods is my go-to!"</p>
+    <p class="testimonial-name">Micheal Kankwatila</p>
+    <p class="testimonial-source">Customer</p>
+  </div>
+
+  <!-- Arrows for navigation -->
+  <span class="arrow-left" onclick="prevSlide()">&#10094;</span>
+  <span class="arrow-right" onclick="nextSlide()">&#10095;</span>
+</div>
+
+<script>
+  let currentSlide = 0;
+  const slides = document.querySelectorAll('.testimonial-slide');
+
+  function showSlide(index) {
+    slides.forEach((slide, i) => {
+      slide.classList.toggle('active', i === index);
+    });
+  }
+
+  function nextSlide() {
+    currentSlide = (currentSlide + 1) % slides.length;
+    showSlide(currentSlide);
+  }
+
+  function prevSlide() {
+    currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+    showSlide(currentSlide);
+  }
+
+  // Optional: Auto-slide every 5 seconds
+  setInterval(nextSlide, 5000);
+</script>
 <!-- End of Testimonials Section -->
+   <br>
+
+
+<!-- Gallery section -->
+<div class="gallery-section">
+  <h2><span style="color: steelblue;">Our</span> Gallery</h2>
+  <div class="gallery-container">
+      <div class="gallery-item">
+          <img src="assets/img/11.jpg" alt="Fresh Local Produce">
+      </div>
+      <div class="gallery-item">
+          <img src="assets/img/2.JPG" alt="Factory Worker Inspecting Products">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/img/3.jpg" alt="Fresh Local Produce">
+      </div>
+      <div class="gallery-item">
+          <img src="assets/img/4.jpg" alt="Farmers Harvesting Crops">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/img/5.JPG" alt="Farmers Harvesting Crops">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/img/6.JPG" alt="Farmers Harvesting Crops">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/img/7.jpg" alt="Farmers Harvesting Crops">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/img/8.JPG" alt="Farmers Harvesting Crops">
+      </div>
+  </div>
+</div>
+<!-- End of Gallery section -->
 
 
 
 
+
+<!-- contact form -->
+<div style="max-width: 800px; margin: 50px auto; background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+  <h2 style="text-align: center; margin-bottom: 20px;">Contact Us</h2>
+  <form action="#" method="post">
+    <div style="display: flex; gap: 10px; margin-bottom: 15px;">
+      <input type="text" name="name" placeholder="Name" required 
+             style="flex: 1; padding: 10px; border: 1px solid #ced4da; border-radius: 4px; font-size: 16px;">
+      <input type="email" name="email" placeholder="Email" required 
+             style="flex: 1; padding: 10px; border: 1px solid #ced4da; border-radius: 4px; font-size: 16px;">
+    </div>
+    <div style="margin-bottom: 15px;">
+      <input type="text" name="subject" placeholder="Subject" required 
+             style="width: 100%; padding: 10px; border: 1px solid #ced4da; border-radius: 4px; font-size: 16px;">
+    </div>
+    <div style="margin-bottom: 20px;">
+      <textarea name="message" placeholder="Message" rows="5" required 
+                style="width: 100%; padding: 10px; border: 1px solid #ced4da; border-radius: 4px; font-size: 16px;"></textarea>
+    </div>
+    <div style="text-align: center;">
+      <button type="submit" 
+              style="background-color: steelblue; color: white; border: none; padding: 10px 20px; border-radius: 4px; font-size: 16px; cursor: pointer;">
+        Send Message
+      </button>
+    </div>
+  </form>
+</div>
+<!-- End of contact form -->
 
 
     <!-- ======= Footer ======= -->
@@ -255,14 +442,14 @@
   
         <div class="me-md-auto text-center text-md-start">
           <div class="copyright">
-            &copy; Copyright <strong><span>Rayen Limited</span></strong>. All Rights Reserved
+            &copy; Copyright <strong><span style="color: steelblue;">Rayen Limited</span></strong>. All Rights Reserved
           </div>
           <div class="credits">
             <!-- All the links in the footer should remain intact. -->
             <!-- You can delete the links only if you purchased the pro version. -->
             <!-- Licensing information: https://bootstrapmade.com/license/ -->
             <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/company-free-html-bootstrap-template/ -->
-            Designed by <a href="https://gusherlabs.com">GusherLabs</a>
+            <!-- Designed by <a href="https://gusherlabs.com">GusherLabs</a> -->
           </div>
         </div>
         <div class="social-links text-center text-md-right pt-3 pt-md-0">
