@@ -2,6 +2,77 @@
 <html lang="en">
 
 <head>
+
+
+
+
+
+  
+  <style>
+    /* Custom styling for the title */
+    .core-values-title {
+      font-weight: bold;
+      color: #4a90e2;
+      text-align: center;
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    /* Flex container to hold the circles */
+    .core-values-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* Circle styling */
+    .circle {
+      width: 100px;
+      height: 100px;
+      background-color: #4a90e2;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      font-size: 16px;
+      position: relative;
+      margin: 0 25px; /* Increase space between circles */
+    }
+
+    /* Horizontal lines connecting circles */
+    .circle:before,
+    .circle:after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      width: 50px; /* Shorter width to keep lines outside circles */
+      height: 2px;
+      background-color: #4a90e2;
+      transform: translateY(-50%); /* Centers the lines vertically */
+    }
+
+    /* Position the left line */
+    .circle:before {
+      left: -50px; /* Adjust to match the width for alignment */
+    }
+
+    /* Position the right line */
+    .circle:after {
+      right: -50px; /* Adjust to match the width for alignment */
+    }
+
+    /* Remove lines on the first and last circles */
+    .circle:first-child:before {
+      display: none;
+    }
+
+    .circle:last-child:after {
+      display: none;
+    }
+</style>
+
+
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
@@ -66,6 +137,8 @@
             <ul>
               <li><a href="Foods.html">Tara Foods</a></li>
               <li><a href="Dairy.html">Rayen Dairy</a></li>
+              <li><a href="Poultry.html">Rayen Poultry</a></li>
+              <li><a href="Trading.html">Rayen Trading</a></li>
               <li><a href="Poultry.html">Rayen Poultry</a></li>
             </ul>
         </li>
@@ -133,7 +206,7 @@
 
         <div class="section-title" data-aos="fade-up">
           <h2>Our <strong>Team</strong></h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+ 
         </div>
 
         <div class="row">
@@ -242,7 +315,116 @@
     </section><!-- End Our Team Section -->
 
 
+
+
+ 
+
+  
+    <div class="text-center mb-5 mt-10">
+      <h2 class=""><span style="color: steelblue;">CORE</span> VALUES</h2>
+      <p>Trust, Integrity, Teamwork and Inclusive Growth</p>
+    
+      <div class="d-flex justify-content-center align-items-center">
+        <div class="circle">Trust</div>
+        <div class="circle">Integrity</div>
+        <div class="circle">Teamwork</div>
+        <div class="circle">Inclusive Growth</div>
+      </div>
+   
+  </div>
+
+
   </main><!-- End #main -->
+
+
+
+
+
+  
+   <!-- ======= Vision and Mission Section ======= -->
+<section id="services" class="services section-bg">
+  <div class="container" data-aos="fade-up">
+    <div class="row justify-content-center">
+    
+      <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+        <div class="icon-box iconbox-blue">
+          <h4><a href="">Our Vision</a></h4>
+          <p>To deliver high-quality food and agricultural products globally, ensuring sustainability, growth, and innovation in every step we take.</p>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
+        <div class="icon-box iconbox-orange">
+          <h4><a href="">Our Mission</a></h4>
+          <p>To be a leading global agribusiness company that creates value for all stakeholders and contributes to a healthier planet.</p>
+        </div>
+      </div> 
+    </div>
+  </div>
+</section><!-- End Vision and Mission Section -->
+
+
+  
+<!-- Testimonials Section -->
+<div class="testimonial-container">
+  <h2>What <span style="color: steelblue;">Our</span> Customers <span style="color: steelblue;">Say</span></h3>
+  <div class="testimonial-slide active">
+    <img src="assets/img/testimonials/testimonials-1.jpg" alt="User photo">
+    <p class="testimonial-text">
+      "Tara Foods always delivers the freshest products! I’m never disappointed with their produce. Highly recommended!"
+      </p>
+    <p class="testimonial-name">Johna Chirambo</p>
+    <p class="testimonial-source">Customer</p>
+  </div>
+
+  <div class="testimonial-slide">
+    <img src="assets/img/testimonials/testimonials-2.jpg" alt="User photo">
+    <p class="testimonial-text">
+      "Their dairy products are of the highest quality. I particularly love their yogurt—it’s smooth and delicious!"
+    </p>
+    <p class="testimonial-name">Susan Kadama</p>
+    <p class="testimonial-source">Customer</p>
+  </div>
+
+
+  <div class="testimonial-slide">
+    <img src="assets/img/testimonials/testimonials-5.jpg" alt="User photo">
+    <p class="testimonial-text">
+      "Great service, excellent products, and they care about the environment. Tara Foods is my go-to!"</p>
+    <p class="testimonial-name">Micheal Kankwatila</p>
+    <p class="testimonial-source">Customer</p>
+  </div>
+
+  <!-- Arrows for navigation -->
+  <span class="arrow-left" onclick="prevSlide()">&#10094;</span>
+  <span class="arrow-right" onclick="nextSlide()">&#10095;</span>
+</div>
+
+<script>
+  let currentSlide = 0;
+  const slides = document.querySelectorAll('.testimonial-slide');
+
+  function showSlide(index) {
+    slides.forEach((slide, i) => {
+      slide.classList.toggle('active', i === index);
+    });
+  }
+
+  function nextSlide() {
+    currentSlide = (currentSlide + 1) % slides.length;
+    showSlide(currentSlide);
+  }
+
+  function prevSlide() {
+    currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+    showSlide(currentSlide);
+  }
+
+  // Optional: Auto-slide every 5 seconds
+  setInterval(nextSlide, 5000);
+</script>
+<!-- End of Testimonials Section -->
+
 
   <!-- ======= Footer ======= -->
   <footer id="footer">
