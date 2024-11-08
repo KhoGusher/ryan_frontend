@@ -6,6 +6,119 @@
 
   <style>
 
+/* Make the image smaller and responsive */
+.custom-img {
+  width: 100%;          /* Ensures image is responsive and takes up available width */
+  max-width: 250px;     /* Sets a maximum width for the image */
+  height: auto;         /* Maintains the aspect ratio */
+  display: block;       /* Removes any extra spacing below the image */
+  margin: 0 auto;       /* Centers the image */
+}
+
+    /* Custom styling for the title */
+    .core-values-title {
+      font-weight: bold;
+      color: #4a90e2;
+      text-align: center;
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    /* Flex container to hold the circles */
+    .core-values-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* Circle styling */
+    .circle {
+      width: 100px;
+      height: 100px;
+      background-color: #4a90e2;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      font-size: 16px;
+      position: relative;
+      margin: 0 25px; /* Increase space between circles */
+    }
+
+    /* Horizontal lines connecting circles */
+    .circle:before,
+    .circle:after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      width: 50px; /* Shorter width to keep lines outside circles */
+      height: 2px;
+      background-color: #4a90e2;
+      transform: translateY(-50%); /* Centers the lines vertically */
+    }
+
+    /* Position the left line */
+    .circle:before {
+      left: -50px; /* Adjust to match the width for alignment */
+    }
+
+    /* Position the right line */
+    .circle:after {
+      right: -50px; /* Adjust to match the width for alignment */
+    }
+
+    /* Remove lines on the first and last circles */
+    .circle:first-child:before {
+      display: none;
+    }
+
+    .circle:last-child:after {
+      display: none;
+    }
+</style>
+
+<style>
+  .card {
+      border: none;
+      transition: transform 0.3s ease;
+  }
+
+  .card:hover {
+      transform: scale(1.05);
+  }
+
+  .card-image {
+      height: 200px;
+      background-size: cover;
+      background-position: center;
+      border-top-left-radius: 0.25rem;
+      border-top-right-radius: 0.25rem;
+  }
+
+  .card-body {
+      padding: 20px;
+  }
+
+  .card-title {
+      font-weight: 600;
+      color: #333;
+  }
+
+  .card-text {
+      color: #777;
+  }
+  
+
+  .blue-filter {
+    filter: opacity(0.7) drop-shadow(0 0 0 #2598f7); /* Steel blue color */
+}
+
+
+
+
+
+
  /* ===================== Styles for Primary & Secondary Interests Section ===================== */
 
 /* General Layout and Spacing */
@@ -399,6 +512,75 @@ h2 span {
 
     
   
+
+    <section class="pt-0">
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- Left Column (Image + Experience) -->
+          <div class="col-lg-6 mb-4 mb-lg-0">
+            <div class="about-img position-relative">
+              <div class="image-box">
+                <div class="image-1">
+                  <!-- Image with smaller height and width -->
+                  <img src="assets/img/slide/slide-3.jpg" class="rounded img-fluid custom-img" alt="About Image">
+                </div>
+              </div>
+              <div class="about-box" style="background-color: #4682B4;">
+                <h3 class="h1 text-white">4+</h3>
+                <p class="mb-0 text-white">Years of Experience</p>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Right Column (Content) -->
+          <div class="col-lg-6 ps-lg-4 ps-xl-7">
+            <div class="content-box">
+              <div class="main-title title-left">
+                Rayen Limited <span class="line-left"></span>
+              </div>
+              <h2 class="w-lg-90 mb-4 mb-lg-5">Trusted Partners in Growth!</h2>
+              <p class="mb-4 mb-lg-5">
+                Rayen Limited is dedicated to empowering businesses through sustainable, ethical growth. 
+                Established in 2020, we specialize in tailored financial and management services that drive success across multiple sectors.
+              </p>
+    
+              <!-- Mission and Vision Section -->
+              <div class="row border-md-bottom clearfix pb-md-5 mb-5 mb-md-7">
+                <div class="tab-style1 horizontaltab">
+                  <div class="resp-tabs-container hor_1">
+                    
+                    <!-- Mission Tab -->
+                    <div class="text-center mb-5">
+                      <h3 class="font-weight-bold">
+                        <span style="color: steelblue;">Our</span> Mission
+                      </h3>
+                      <p>To accelerate growth of sustainable and ethical businesses that have a positive impact on the community.</p>
+                    </div>
+    
+                    <!-- Vision Tab -->
+                    <div class="text-center mb-5">
+                      <h3 class="font-weight-bold">
+                        Our <span style="color: steelblue;">Vision</span>
+                      </h3>
+                      <p>To be a leading PE firm with profitable and sustainable businesses.</p>
+                    </div>
+    
+                    <!-- More About Us Button -->
+                    <div class="text-center">
+                      <a href="about.html" class="btn-get-started">More About Us</a>
+                    </div>
+    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+        </div>
+      </div>
+    </section>
+    
+    
   
   <!-- ======= Services Section ======= -->
   <section id="services" class="services section-bg">
@@ -463,6 +645,66 @@ h2 span {
       </div>
     </section><!-- End Services Section -->
     
+
+
+
+
+
+      <!-- Counter section -->
+  <div class="impact-section">
+    <h2>Our <span style="color: steelblue;"> Impact</span></h2>
+    <p class="pb-3">Rayen Limited continues to drive growth and innovation across multiple sectors. Here’s a snapshot of our success.</p>
+    <div class="impact-stats container">
+        <div class="stat-box ">
+            <div class="icon ml-8">📅</div>
+            <div class="stat-number" data-target="4">0</div>
+            <div class="stat-label">Years in Operation</div>
+        </div>
+        <div class="stat-box">
+            <div class="icon">😊</div>
+            <div class="stat-number" data-target="500">0</div>
+            <div class="stat-label">Happy Clients</div>
+        </div>
+        <div class="stat-box">
+            <div class="icon">🌍</div>
+            <div class="stat-number" data-target="25">0</div>
+            <div class="stat-label">Markets Served</div>
+        </div>
+        <div class="stat-box">
+            <div class="icon">📦</div>
+            <div class="stat-number" data-target="500">0</div>
+            <div class="stat-label">Products Delivered</div>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Counter Animation
+    document.addEventListener("DOMContentLoaded", () => {
+        const counters = document.querySelectorAll('.stat-number');
+        counters.forEach(counter => {
+            const target = +counter.getAttribute('data-target');
+            const increment = target / 200; // Speed of animation
+            let count = 0;
+
+            const updateCounter = () => {
+                count += increment;
+                if (count < target) {
+                    counter.textContent = Math.ceil(count);
+                    requestAnimationFrame(updateCounter);
+                } else {
+                    counter.textContent = target + '+';
+                }
+            };
+            updateCounter();
+        });
+    });
+</script>
+  <!-- End of Counter section -->
+
+
+
+  
     <!-- ======= Our Subsidiaries section ======= -->
     <div class="products-section">
       <h2> <span style="color: steelblue;">Our</span> Subsidiaries</h2>
