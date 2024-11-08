@@ -2577,7 +2577,6 @@ section {
   padding: 20px;
   border-radius: 8px;
   text-align: center;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   position: relative;
   overflow: hidden;
 }
@@ -2827,3 +2826,108 @@ color: steelblue;
 content: '\25B2';
 font-size: 12px;
 }
+
+/* Core values */
+/* Custom styling for the title */
+.core-values-title {
+  font-weight: bold;
+  color: #4a90e2;
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Flex container to hold the circles */
+.core-values-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Circle styling */
+.circle {
+  width: 100px;
+  height: 100px;
+  background-color: #4a90e2;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 16px;
+  position: relative;
+  margin: 0 25px; /* Increase space between circles */
+}
+
+/* Horizontal lines connecting circles */
+.circle:before,
+.circle:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 50px; /* Shorter width to keep lines outside circles */
+  height: 2px;
+  background-color: #4a90e2;
+  transform: translateY(-50%); /* Centers the lines vertically */
+}
+
+/* Position the left line */
+.circle:before {
+  left: -50px; /* Adjust to match the width for alignment */
+}
+
+/* Position the right line */
+.circle:after {
+  right: -50px; /* Adjust to match the width for alignment */
+}
+
+/* Remove lines on the first and last circles */
+.circle:first-child:before {
+  display: none;
+}
+
+.circle:last-child:after {
+  display: none;
+}
+
+
+/* Index card */
+
+  .card {
+      border: none;
+      transition: transform 0.3s ease;
+  }
+
+  .card:hover {
+      transform: scale(1.05);
+  }
+
+  .card-image {
+      height: 200px;
+      background-size: cover;
+      background-position: center;
+      border-top-left-radius: 0.25rem;
+      border-top-right-radius: 0.25rem;
+  }
+
+  .card-body {
+      padding: 20px;
+  }
+
+  .card-title {
+      font-weight: 600;
+      color: #333;
+  }
+
+  .card-text {
+      color: #777;
+  }
+  
+
+  .blue-filter {
+    filter: opacity(0.7) drop-shadow(0 0 0 #2598f7); /* Steel blue color */
+}
+
+
+
+
