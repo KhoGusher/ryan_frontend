@@ -2,77 +2,6 @@
 <html lang="en">
 
 <head>
-
-
-
-
-
-  
-  <style>
-    /* Custom styling for the title */
-    .core-values-title {
-      font-weight: bold;
-      color: #4a90e2;
-      text-align: center;
-      font-size: 24px;
-      margin-bottom: 20px;
-    }
-
-    /* Flex container to hold the circles */
-    .core-values-container {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    /* Circle styling */
-    .circle {
-      width: 100px;
-      height: 100px;
-      background-color: #4a90e2;
-      color: white;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border-radius: 50%;
-      font-size: 16px;
-      position: relative;
-      margin: 0 25px; /* Increase space between circles */
-    }
-
-    /* Horizontal lines connecting circles */
-    .circle:before,
-    .circle:after {
-      content: "";
-      position: absolute;
-      top: 50%;
-      width: 50px; /* Shorter width to keep lines outside circles */
-      height: 2px;
-      background-color: #4a90e2;
-      transform: translateY(-50%); /* Centers the lines vertically */
-    }
-
-    /* Position the left line */
-    .circle:before {
-      left: -50px; /* Adjust to match the width for alignment */
-    }
-
-    /* Position the right line */
-    .circle:after {
-      right: -50px; /* Adjust to match the width for alignment */
-    }
-
-    /* Remove lines on the first and last circles */
-    .circle:first-child:before {
-      display: none;
-    }
-
-    .circle:last-child:after {
-      display: none;
-    }
-</style>
-
-
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
@@ -115,33 +44,41 @@
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center">
 
-      <h1 class="logo me-auto"><a href="index.html"><span>Ray</span>en Limited</a></h1>
-      <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      
+
+       <h1 class="logo me-auto"><a href="index.html"> <img class="logo-img" src="assets/img/logo.png" alt="logo"/></a></h1>
+      <!-- <h1 class="logo me-auto"><a href="index.html"><span style="color: steelblue;">Ray</span>en Limited</a></h1> -->
+
+
 
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
-          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html" class="active">Home</a></li>
 
           <li class="dropdown"><a href="#"><span>About</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a href="about.html" class="active">About Us</a></li>
+              <li><a href="about.html">About Us</a></li>
               <li><a href="team.html">Team</a></li>
-              <li><a href="testimonials.html">Testimonials</a></li>
-
+              <!-- <li><a href="testimonials.html">Testimonials</a></li> -->
             </ul>
+
+
           </li>
 
           <li><a href="services.html">Services</a></li>
+
+        
           <li class="dropdown"><a ><span>Subsidiaries</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a href="Foods.html">Tara Foods</a></li>
-              <li><a href="Dairy.html">Rayen Dairy</a></li>
-              <li><a href="Poultry.html">Rayen Poultry</a></li>
-              <li><a href="Trading.html">Rayen Trading</a></li>
-              <li><a href="Poultry.html">Rayen Poultry</a></li>
+              <li><a href="Foods.html">Tara Foods Ltd</a></li>
+              <!-- <li><a href="Fresh.html">Rayen Fresh</a></li> -->
+              <li><a href="Dairy.html">Rayen Dairy Ltd</a></li>
+              <!-- <li><a href="Trading.html">Rayen Trading</a></li> -->
+              <li><a href="Poultry.html">Rayen Poultry Ltd</a></li>
             </ul>
         </li>
+
           <li><a href="contact.html">Contact</a></li>
 
         </ul>
@@ -156,7 +93,8 @@
       </div>
 
     </div>
-  </header><!-- End Header -->
+  </header>
+  <!-- End Header -->
 
   <main id="main">
 
@@ -201,13 +139,11 @@
     </section><!-- End About Us Section -->
 
     <!-- ======= Our Team Section ======= -->
-    <section id="team" class="team section-bg">
-      <div class="container">
+    <section id="team" class="team section-bg" >
+      <div class="container" >
 
-        <div class="section-title" data-aos="fade-up">
-          <h2>Our <strong>Team</strong></h2>
- 
-        </div>
+        <div class="section-title" data-aos="fade-up" >
+          <h2>Our <strong>Team</strong></h2></div>
 
         <div class="row">
 
@@ -287,9 +223,6 @@
             </div>
           </div>
 
-
-
-
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
             <div class="member" data-aos="fade-up" data-aos-delay="300">
               <div class="member-img">
@@ -304,7 +237,7 @@
               <div class="member-info">
                 <h4> Clement Namanya </h4>
                 <span>partnership Manager</span>
-                <p>He is the Partnerships Manager with a proven track record of establishing and maintaining strategic partnerships with key stakeholders, driving corporate growth and sustainability. He is a holder of a Bachelor of  Arts(Humanities) with a double Major in French for International Relations and Political Philosophy obtained from University of Malawi. He has worked with the Ministry of Foreign Affairs of the Republic of Malawi and African Union.</p>
+                <p>He is the Partnerships Manager with a proven track record of establishing and maintaining strategic partnerships with key stakeholders. He is a holder of a Bachelor of  Arts(Humanities) obtained from Unima. He has worked with the Ministry of Foreign Affairs of the Republic of Malawi and African Union.</p>
               </div>
             </div>
           </div>
@@ -315,116 +248,127 @@
     </section><!-- End Our Team Section -->
 
 
+<!-- Mission, Vision, and Core Values Section -->
+<section class="pt-0 text-center">
+  <div class="container">
+    <!-- Mission and Vision Section -->
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="content-box">
+          <div class="row border-md-bottom clearfix pb-md-5 mb-5 mb-md-7">
+            <div class="tab-style1 horizontaltab">
+              <div class="resp-tabs-container hor_1">
+                <div class="mb-5">
+                  <h2 class="">
+                    <span style="color: steelblue;">Our</span> Mission
+                  </h2>
+                  <p>
+                    To accelerate growth of sustainable and ethical businesses
+                    which should have a positive impact on the community.
+                  </p>
+                </div>
 
+                <div class="mb-5">
+                  <h2 class="">
+                    Our <span style="color: steelblue;">Vision</span>
+                  </h2>
+                  <p>
+                    To be a leading PE firm with profitable and sustainable businesses.
+                  </p>
+                </div>
 
- 
+                <div class="mt-4">
+                  <a href="about.html" class="btn-get-started">More About Us</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-  
-    <div class="text-center mb-5 mt-10">
-      <h2 class=""><span style="color: steelblue;">CORE</span> VALUES</h2>
-      <p>Trust, Integrity, Teamwork and Inclusive Growth</p>
-    
-      <div class="d-flex justify-content-center align-items-center">
+    <!-- Core Values Section -->
+    <div class="mb-5">
+      <h2 class="">
+        <span style="color: steelblue;">CORE</span> VALUES
+      </h2>
+      <p>Trust, Integrity, Teamwork, and Inclusive Growth</p>
+
+      <div class="d-flex justify-content-center align-items-center gap-3">
         <div class="circle">Trust</div>
         <div class="circle">Integrity</div>
         <div class="circle">Teamwork</div>
         <div class="circle">Inclusive Growth</div>
       </div>
-   
+    </div>
   </div>
+</section>
+<!-- End of Mission, Vision, and Core Values Section -->
+
+
+
+  
+  <br>
+  <!-- Testimonials Section -->
+  <div class="testimonial-container">
+    <div class="testimonial-slide active">
+      <img src="assets/img/p.jpg" alt="User photo">
+      <p class="testimonial-text">
+        "Exceptional service and insightful guidance. Rayen Ltd truly lives up to their promise as trusted partners in growth.Rayen Ltd’s team transformed our operations with strategic advice and hands-on support. Highly recommended!"
+      </p>
+      <p class="testimonial-name">Pachawo Bisani</p>
+    </div>
+    <!-- Additional testimonial slides -->
+    <div class="testimonial-slide">
+      <img src="assets/img/a.jpg" alt="User photo">
+      <p class="testimonial-text">
+        "Rayen Ltd has been instrumental in our growth journey. Their expertise and support have exceeded our expectations!,Rayen Ltd’s team transformed our operations with strategic advice and hands-on support. Highly recommended!"
+      </p>
+      <p class="testimonial-name">Atusaghe Mushani</p>
+    </div>
+  
+    <!-- Arrows for navigation -->
+    <span class="arrow-left" onclick="prevSlide()">&#10094;</span>
+    <span class="arrow-right" onclick="nextSlide()">&#10095;</span>
+  </div>
+  
+  <script>
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.testimonial-slide');
+  
+    function showSlide(index) {
+      slides.forEach((slide, i) => {
+        slide.classList.toggle('active', i === index);
+      });
+    }
+  
+    function nextSlide() {
+      currentSlide = (currentSlide + 1) % slides.length;
+      showSlide(currentSlide);
+    }
+  
+    function prevSlide() {
+      currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+      showSlide(currentSlide);
+    }
+  
+    // Optional: Auto-slide every 5 seconds
+    setInterval(nextSlide, 5000);
+  </script>
+  <!-- End of Testimonials Section -->
+  <br>
+   
+
 
 
   </main><!-- End #main -->
 
 
-
-
-
-  
-   <!-- ======= Vision and Mission Section ======= -->
-<section id="services" class="services section-bg">
-  <div class="container" data-aos="fade-up">
-    <div class="row justify-content-center">
-    
-      <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
-        <div class="icon-box iconbox-blue">
-          <h4><a href="">Our Vision</a></h4>
-          <p>To deliver high-quality food and agricultural products globally, ensuring sustainability, growth, and innovation in every step we take.</p>
-        </div>
-      </div>
-
-      <div class="col-lg-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
-        <div class="icon-box iconbox-orange">
-          <h4><a href="">Our Mission</a></h4>
-          <p>To be a leading global agribusiness company that creates value for all stakeholders and contributes to a healthier planet.</p>
-        </div>
-      </div> 
-    </div>
-  </div>
-</section>
-
-
-  
-<!-- Testimonials Section -->
-<div class="testimonial-container">
-  <h2>What <span style="color: steelblue;">Our</span> Customers <span style="color: steelblue;">Say</span></h3>
-  <div class="testimonial-slide active">
-    <img src="assets/img/testimonials/testimonials-1.jpg" alt="User photo">
-    <p class="testimonial-text">
-      "Tara Foods always delivers the freshest products! I’m never disappointed with their produce. Highly recommended!"
-      </p>
-    <p class="testimonial-name">Johna Chirambo</p>
-    <p class="testimonial-source">Customer</p>
-  </div>
-
-  <div class="testimonial-slide">
-    <img src="assets/img/testimonials/testimonials-2.jpg" alt="User photo">
-    <p class="testimonial-text">
-      "Their dairy products are of the highest quality. I particularly love their yogurt—it’s smooth and delicious!"
-    </p>
-    <p class="testimonial-name">Susan Kadama</p>
-    <p class="testimonial-source">Customer</p>
-  </div>
-
-
-  <div class="testimonial-slide">
-    <img src="assets/img/testimonials/testimonials-5.jpg" alt="User photo">
-    <p class="testimonial-text">
-      "Great service, excellent products, and they care about the environment. Tara Foods is my go-to!"</p>
-    <p class="testimonial-name">Micheal Kankwatila</p>
-    <p class="testimonial-source">Customer</p>
-  </div>
-
-  <!-- Arrows for navigation -->
-  <span class="arrow-left" onclick="prevSlide()">&#10094;</span>
-  <span class="arrow-right" onclick="nextSlide()">&#10095;</span>
+  <!-- Map Section -->
+  <div class="map-section">
+    <iframe style="border:0; width: 100%; height: 350px;" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d10000!2d33.81568729867308!3d-13.955098130901163!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1699545153407" frameborder="0" allowfullscreen></iframe>
 </div>
-
-<script>
-  let currentSlide = 0;
-  const slides = document.querySelectorAll('.testimonial-slide');
-
-  function showSlide(index) {
-    slides.forEach((slide, i) => {
-      slide.classList.toggle('active', i === index);
-    });
-  }
-
-  function nextSlide() {
-    currentSlide = (currentSlide + 1) % slides.length;
-    showSlide(currentSlide);
-  }
-
-  function prevSlide() {
-    currentSlide = (currentSlide - 1 + slides.length) % slides.length;
-    showSlide(currentSlide);
-  }
-
-  // Optional: Auto-slide every 5 seconds
-  setInterval(nextSlide, 5000);
-</script>
-<!-- End of Testimonials Section -->
-
+  <!-- End of Map Section -->
 
   <!-- ======= Footer ======= -->
   <footer id="footer">
