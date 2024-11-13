@@ -1,3 +1,4 @@
+"use client"
 import Image from 'next/image';
 
 const AboutSection = () => {
@@ -7,7 +8,7 @@ const AboutSection = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-6">
           
           <div className="relative">
-            <div className="relative w-full h-64">
+            <div className="relative w-48">
               <Image
                 src="/assets/img/image.png"
                 alt="Rayen Limited"
@@ -69,22 +70,7 @@ const AboutSection = () => {
           </div>
         </div>
 
-        <div className="text-center mt-10">
-          <h2 className="text-xl font-semibold mb-4">
-            <span className="text-steelblue">CORE</span> VALUES
-          </h2>
-          <p className="mb-4">Trust, Integrity, Teamwork and Inclusive Growth</p>
-          <div className="flex justify-center items-center gap-4">
-            {['Trust', 'Integrity', 'Teamwork', 'Inclusive Growth'].map((value) => (
-              <div
-                key={value}
-                className="circle bg-gray-200 text-gray-700 py-4 px-6 rounded-full shadow-md"
-              >
-                {value}
-              </div>
-            ))}
-          </div>
-        </div>
+      
       </div>
     </section>
   );

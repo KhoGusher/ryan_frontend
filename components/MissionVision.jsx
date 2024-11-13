@@ -1,3 +1,4 @@
+"use client"
 import Link from 'next/link';
 
 const MissionVision = () => {
@@ -30,8 +31,8 @@ const MissionVision = () => {
                       </p>
                     </div>
 
-                    <div className="mt-4">
-                      <Link href="/about" className="btn btn-primary">
+                    <div  className="mt-4">
+                      <Link href="/about"  style={{ background: 'steelblue' }}  className="btn btn-primary mb-4">
                         More About Us
                       </Link>
                     </div>
@@ -49,10 +50,10 @@ const MissionVision = () => {
           <p>Trust, Integrity, Teamwork, and Inclusive Growth</p>
 
           <div className="d-flex justify-content-center align-items-center gap-3">
-            <div className="circle">Trust</div>
-            <div className="circle">Integrity</div>
-            <div className="circle">Teamwork</div>
-            <div className="circle">Inclusive Growth</div>
+            <div style={{ background: 'steelblue' }}  className="circle">Trust</div>
+            <div style={{ background: 'steelblue' }}  className="circle">Integrity</div>
+            <div style={{ background: 'steelblue' }}  className="circle">Teamwork</div>
+            <div style={{ background: 'steelblue' }}  className="circle">Inclusive Growth</div>
           </div>
         </div>
       </div>

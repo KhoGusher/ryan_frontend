@@ -15,7 +15,7 @@ const HeroCarousel = () => {
       image: '../assets/img/slide/slide-2.jpg',
       title: 'Strategic Financial Solutions',
       description: 'From venture capital to debt financing, Rayen Ltd provides tailored financial services that fuel innovation and expansion. Our dedicated team ensures each investment is thoroughly researched, strategically managed, and positioned for long-term success.',
-      button: { text: 'Contact Us', link: '/contact' },
+      button: {  text: 'Contact Us', link: '/contact' },
     },
     {
       image: '../assets/img/slide/slide-3.jpg',
@@ -48,7 +48,7 @@ const HeroCarousel = () => {
               <div className="carousel-content text-center">
                 <h2 style={{ color: 'steelblue' }}>{slide.title}</h2>
                 <p>{slide.description}</p>
-                <Link href={slide.button.link} className="btn btn-primary">
+                <Link href={slide.button.link} style={{ background: 'steelblue' }}  className="btn btn-primary">
                   {slide.button.text}
                 </Link>
               </div>
