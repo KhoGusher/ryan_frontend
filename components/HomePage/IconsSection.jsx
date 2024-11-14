@@ -21,7 +21,7 @@ const IconSection = () => {
                     <Image
                       src="/assets/img/icon1.png"
                       alt="Efficient Delivery"
-                      width={50} // Adjust width and height as needed
+                      width={50}
                       height={50}
                       className="blue-filter"
                     />
