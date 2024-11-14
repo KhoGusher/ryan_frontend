@@ -1,5 +1,3 @@
-import React from 'react';
-import Image from 'next/image'; // For optimized images in Next.js
 import Link from 'next/link';
 
 const Subsidiaries = () => {

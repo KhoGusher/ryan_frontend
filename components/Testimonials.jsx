@@ -19,9 +19,9 @@ const Testimonials = () => {
       source: 'Customer',
     },
     {
-      image: '/assets/img/testimonials/testimonials-5.jpg',
+      image: '/assets/img/team/team-2.jpg',
       text: `"Great service, excellent products, and they care about the environment. Tara Foods is my go-to!"`,
-      name: 'Micheal Kankwatila',
+      name: 'Lyndon Mlinde',
       source: 'Customer',
     },
   ];

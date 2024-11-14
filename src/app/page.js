@@ -1,6 +1,3 @@
-
-import React from "react"
-
 import Testimonials from "../../components/Testimonials"
 import AboutPage from "./about/page"
 
@@ -10,23 +7,21 @@ import MissionVision from "../../components/MissionVision"
 import AboutSection from "../../components/HomePage/Aboutpage"
 import Subsidiaries from "../../components/Subsidiary"
 import ServicesForm from "../../components/Services"
+import ImpactSection from "../../components/Impact"
+import IconSection from "../../components/HomePage/IconsSection"
 
 
 function page() {
   return (
     <div>
       <HeroCarousel/>
+      <IconSection/>
       <AboutSection/>
       <ServicesForm/>
       <Subsidiaries/>
-      <Testimonials/>
-      {/* <CoreValues/>
-      <TeamSection/>
-      <Subsidiaries/>
-      <Testimonials/>
       <ImpactSection/>
-      <AboutSection/>
-      <Services/> */}
+      <Testimonials/>
+
     </div>
   )
 }
