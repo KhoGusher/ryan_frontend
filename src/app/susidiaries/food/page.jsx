@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import { useState } from "react";
+import Link from "next/link";
 
 export default function Food() {
   const [activeIndex, setActiveIndex] = useState(null);
@@ -11,6 +12,27 @@ export default function Food() {
 
   return (
     <div>
+            {/* Breadcrumbs */}
+            <section
+      id="breadcrumbs"
+      className="breadcrumbs"
+      style={{ backgroundColor: "steelblue" }}
+    >
+      <div className="container pt-5">
+        <div className="d-flex justify-content-between list-unstyled w-100">
+          <h2>Tara foods</h2>
+          <ol>
+            <li>
+              <Link href="/" className="text-white text-decoration-none">
+                Home
+              </Link>
+            </li>
+            <li className="text-white">Tara foods</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+    {/* End of breadcrumbs */}
       {/* Welcome section */}
 
       <div

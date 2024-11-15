@@ -9,6 +9,7 @@ import Subsidiaries from "../../components/Subsidiary"
 import ServicesForm from "../../components/Services"
 import ImpactSection from "../../components/Impact"
 import IconSection from "../../components/HomePage/IconsSection"
+import HeaderSection from "../../components/Header"
 
 
 function page() {
@@ -16,11 +17,12 @@ function page() {
     <div>
       <HeroCarousel/>
       <IconSection/>
-      <AboutSection/>
+      {/* <AboutSection/> */}
       <ServicesForm/>
       <Subsidiaries/>
       <ImpactSection/>
       <Testimonials/>
+
 
     </div>
   )

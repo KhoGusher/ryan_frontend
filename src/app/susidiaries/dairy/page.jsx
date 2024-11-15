@@ -2,6 +2,7 @@
 import Image from "next/image";
 import { useState } from "react";
 import Subsidiaries from "../../../../components/Subsidiary";
+import Link from "next/link";
 
 export default function Dairy() {
   const [activeIndex, setActiveIndex] = useState(null);
@@ -11,6 +12,30 @@ export default function Dairy() {
   };
   return (
     <div>
+
+      {/* Breadcrumbs */}
+      <section
+      id="breadcrumbs"
+      className="breadcrumbs"
+      style={{ backgroundColor: "steelblue" }}
+    >
+      <div className="container pt-5">
+        <div className="d-flex justify-content-between list-unstyled w-100">
+          <h2>Dairy</h2>
+          <ol>
+            <li>
+              <Link href="/" className="text-white text-decoration-none">
+                Home
+              </Link>
+            </li>
+            <li className="text-white">Dairy</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+    {/* End of breadcrumbs */}
+
+
       {/* Welcome section */}
 
       <div

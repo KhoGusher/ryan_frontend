@@ -7,12 +7,14 @@ export default function Breadcrumbs() {
       className="breadcrumbs"
       style={{ backgroundColor: "steelblue" }}
     >
-      <div className="container">
-        <div className="flex justify-between items-center">
+      <div className="container pt-5">
+        <div className="d-flex justify-content-between list-unstyled w-100">
           <h2>About</h2>
-          <ol className="flex gap-2">
+          <ol >
             <li>
-              <Link href="/" className="text-white hover:underline">Home</Link>
+              <Link href="/" className="text-white text-decoration-none">
+                Home
+              </Link>
             </li>
             <li className="text-white">About</li>
           </ol>

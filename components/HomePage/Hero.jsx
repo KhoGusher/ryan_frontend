@@ -90,7 +90,7 @@ const HeroCarousel = () => {
         }
 
         .carousel-image {
-          filter: blur(5px); 
+          filter: blur(2px); 
           height: 100%; 
           position: absolute;
           top: 0;

@@ -1,24 +1,25 @@
 "use client"
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
+import 'bootstrap-icons/font/bootstrap-icons.css';
 
 
-const Header = () => {
-  const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
-  const [showBackToTop, setShowBackToTop] = useState(false);
+const HeaderSection = () => {
+  // const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
+  // const [showBackToTop, setShowBackToTop] = useState(false);
 
-  useEffect(() => {
-    const toggleBackToTop = () => {
-      setShowBackToTop(window.scrollY > 100);
-    };
+  // useEffect(() => {
+  //   const toggleBackToTop = () => {
+  //     setShowBackToTop(window.scrollY > 100);
+  //   };
 
-    window.addEventListener('scroll', toggleBackToTop);
-    return () => window.removeEventListener('scroll', toggleBackToTop);
-  }, []);
+  //   window.addEventListener('scroll', toggleBackToTop);
+  //   return () => window.removeEventListener('scroll', toggleBackToTop);
+  // }, []);
 
-  const toggleMobileNav = () => {
-    setIsMobileNavOpen(!isMobileNavOpen);
-  };
+  // const toggleMobileNav = () => {
+  //   setIsMobileNavOpen(!isMobileNavOpen);
+  // };
 
   return (
     <header id="header" className="fixed-top">
@@ -33,7 +34,7 @@ const Header = () => {
 
         <nav
           id="navbar"
-          className={`navbar order-last order-lg-0 ${isMobileNavOpen ? 'navbar-mobile' : ''}`}
+          className={`navbar order-last order-lg-0`}
         >
           <ul>
             <li>
@@ -91,7 +92,7 @@ const Header = () => {
               </Link>
             </li>
           </ul>
-          <i className="bi bi-list mobile-nav-toggle" onClick={toggleMobileNav}></i>
+          <i className="bi bi-list mobile-nav-toggle" ></i>
         </nav>
 
         <div className="header-social-links d-flex">
@@ -110,14 +111,79 @@ const Header = () => {
         </div>
       </div>
 
-      {showBackToTop && (
+      {/* {showBackToTop && (
         <Link href="#header" className="back-to-top active">
           <i className="bi bi-arrow-up"></i>
         </Link>
-      )}
+      )} */}
     </header>
   );
 };
 
-export default Header;
+export default HeaderSection;
 
+
+
+
+
+
+
+
+
+
+
+
+// "use client";
+// import { useState } from "react";
+// import Link from "next/link";
+
+// export default function Header() {
+//   const [isOpen, setIsOpen] = useState(false);
+
+//   return (
+//     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+//       <div className="container">
+//         <Link className="navbar-brand" href="/">
+//           Rayen Limited
+//         </Link>
+//         <button
+//           className="navbar-toggler"
+//           type="button"
+//           onClick={() => setIsOpen(!isOpen)}
+//           aria-controls="navbarNav"
+//           aria-expanded={isOpen}
+//           aria-label="Toggle navigation"
+//         >
+//           <span className="navbar-toggler-icon"></span>
+//         </button>
+//         <div
+//           className={`collapse navbar-collapse ${isOpen ? "show" : ""}`}
+//           id="navbarNav"
+//         >
+//           <ul className="navbar-nav ms-auto">
+//             <li className="nav-item">
+//               <Link className="nav-link" href="/">
+//                 Home
+//               </Link>
+//             </li>
+//             <li className="nav-item">
+//               <Link className="nav-link" href="/services">
+//                 Services
+//               </Link>
+//             </li>
+//             <li className="nav-item">
+//               <Link className="nav-link" href="/contact">
+//                 Contact
+//               </Link>
+//             </li>
+//             <li className="nav-item">
+//               <Link className="nav-link" href="/about">
+//                 About
+//               </Link>
+//             </li>
+//           </ul>
+//         </div>
+//       </div>
+//     </nav>
+//   );
+// }

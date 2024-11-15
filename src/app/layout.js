@@ -7,6 +7,7 @@ import Footer from "../../components/Footer";
 import Breadcrumbs from "../../components/BreadCrumbs";
 import { Inter } from 'next/font/google';
 import 'boxicons/css/boxicons.min.css';
+import HeaderSection from "../../components/Header";
 
 const inter = Inter({
   subsets: ['latin'],
@@ -25,7 +26,7 @@ export default function RootLayout({ children }) {
         className={inter.className}
       >
         <Header/>
-        <Breadcrumbs/>
+        {/* <Breadcrumbs/> */}
         {children}
         <Footer/>
       </body>
