@@ -126,7 +126,7 @@ const HeaderSection = () => {
           <IoClose />
   </button>
          
-          <ul className="list-group">
+          <ul className="list-group mb-4">
             <li onClick={handleBackClick}  className="list-group-item">
               <Link className="text-decoration-none" href="/">Home</Link>
             </li>
