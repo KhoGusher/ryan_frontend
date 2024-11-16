@@ -128,28 +128,28 @@ const HeaderSection = () => {
          
           <ul className="list-group mb-4">
             <li onClick={handleBackClick}  className="list-group-item">
-              <Link className="text-decoration-none" href="/">Home</Link>
+              <Link style={{ color: 'steelblue' }}  className="text-decoration-none" href="/">Home</Link>
             </li>
             <li onClick={handleBackClick}  className="list-group-item">
-              <Link className="text-decoration-none" href="/about">About Us</Link>
+              <Link style={{ color: 'steelblue' }}  className="text-decoration-none" href="/about">About Us</Link>
             </li>
             <li onClick={handleBackClick}  className="list-group-item">
-              <Link className="text-decoration-none" href="/team">Team</Link>
+              <Link style={{ color: 'steelblue' }}  className="text-decoration-none" href="/team">Team</Link>
             </li>
             <li onClick={handleBackClick}  className="list-group-item">
-              <Link className="text-decoration-none" href="/services">Services</Link>
+              <Link style={{ color: 'steelblue' }}  className="text-decoration-none" href="/services">Services</Link>
             </li>
             <li onClick={handleBackClick}  className="list-group-item">
-              <Link className="text-decoration-none" href="/contact">Contact</Link>
+              <Link style={{ color: 'steelblue' }}  className="text-decoration-none" href="/contact">Contact</Link>
             </li>
             <li onClick={handleBackClick}  className="list-group-item">
-              <Link className="text-decoration-none" href="/susidiaries/food">Tara Foods Ltd</Link>
+              <Link style={{ color: 'steelblue' }}  className="text-decoration-none" href="/susidiaries/food">Tara Foods Ltd</Link>
             </li>
             <li onClick={handleBackClick}  className="list-group-item">
-              <Link className="text-decoration-none" href="/susidiaries/dairy">Rayen Dairy Ltd</Link>
+              <Link style={{ color: 'steelblue' }}  className="text-decoration-none" href="/susidiaries/dairy">Rayen Dairy Ltd</Link>
             </li>
             <li onClick={handleBackClick} className="list-group-item">
-              <Link className="text-decoration-none" href="/susidiaries/poultry">Rayen Poultry Ltd</Link>
+              <Link style={{ color: 'steelblue' }}  className="text-decoration-none" href="/susidiaries/poultry">Rayen Poultry Ltd</Link>
             </li>
           </ul>
         </div>
