@@ -127,29 +127,29 @@ const HeaderSection = () => {
   </button>
          
           <ul className="list-group">
-            <li onClick={handleBackClick}  className="list-group-item">
-              <Link href="/">Home</Link>
+            <li onClick={handleBackClick}  className="list-group-item text-decoration-none">
+              <Link className="text-decoration-none" href="/">Home</Link>
             </li>
-            <li onClick={handleBackClick}  className="list-group-item">
-              <Link href="/about">About Us</Link>
+            <li onClick={handleBackClick}  className="list-group-item text-decoration-none">
+              <Link className="text-decoration-none" href="/about">About Us</Link>
             </li>
-            <li onClick={handleBackClick}  className="list-group-item">
-              <Link href="/team">Team</Link>
+            <li onClick={handleBackClick}  className="list-group-item text-decoration-none">
+              <Link  className="text-decoration-none" href="/team">Team</Link>
             </li>
-            <li onClick={handleBackClick}  className="list-group-item">
-              <Link href="/services">Services</Link>
+            <li onClick={handleBackClick}  className="list-group-item text-decoration-none">
+              <Link className="text-decoration-none" href="/services">Services</Link>
             </li>
-            <li onClick={handleBackClick}  className="list-group-item">
-              <Link href="/contact">Contact</Link>
+            <li onClick={handleBackClick}  className="list-group-item text-decoration-none">
+              <Link className="text-decoration-none" href="/contact">Contact</Link>
             </li>
-            <li onClick={handleBackClick}  className="list-group-item">
-              <Link href="/susidiaries/food">Tara Foods Ltd</Link>
+            <li onClick={handleBackClick}  className="list-group-item text-decoration-none">
+              <Link className="text-decoration-none" href="/susidiaries/food">Tara Foods Ltd</Link>
             </li>
-            <li onClick={handleBackClick}  className="list-group-item">
-              <Link href="/susidiaries/dairy">Rayen Dairy Ltd</Link>
+            <li onClick={handleBackClick}  className="list-group-item text-decoration-none">
+              <Link className="text-decoration-none" href="/susidiaries/dairy">Rayen Dairy Ltd</Link>
             </li>
-            <li onClick={handleBackClick} className="list-group-item">
-              <Link href="/susidiaries/poultry">Rayen Poultry Ltd</Link>
+            <li onClick={handleBackClick} className="list-group-item text-decoration-none">
+              <Link className="text-decoration-none" href="/susidiaries/poultry">Rayen Poultry Ltd</Link>
             </li>
           </ul>
         </div>
