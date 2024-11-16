@@ -3,7 +3,7 @@ const MapSection = () => {
       <div className="map-section py-5">
         <div className="text-center mb-4">
           <h2>
-            Our <span className="text-primary">Location</span>
+            Our <span  style={{ color: 'steelblue' }}>Location</span>
           </h2>
           <p>
             Muwawane Village, Chiwamba EPA, TA Chimutu, Lilongwe, Malawi.

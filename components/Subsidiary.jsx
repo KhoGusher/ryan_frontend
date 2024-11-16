@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Dairy from '@/app/susidiaries/dairy/page';
 
 const Subsidiaries = () => {
   const subsidiaries = [

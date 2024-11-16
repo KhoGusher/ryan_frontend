@@ -14,7 +14,7 @@ const Gallery = () => {
       <div className="gallery-section py-5">
         <div className="container text-center">
           <h2>
-            <span className="text-primary">Our</span> Gallery
+            <span style={{ color: 'steelblue' }}>Our</span> Gallery
           </h2>
           <div className="row g-4 mt-4">
             {images.map((image, index) => (
