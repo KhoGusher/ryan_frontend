@@ -67,7 +67,6 @@ export default function LoginPage() {
         <Link href="#" className="text-blue-500 text-decoration-none">
               Sign up
             </Link>
-           </p>
         </p>
       </div>
     </div>
