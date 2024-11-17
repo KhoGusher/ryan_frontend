@@ -12,7 +12,7 @@ const IconSection = () => {
           </div>
 
           {/* Services Block */}
-          <section className="py-2-3 services-block">
+          <section className=" services-block">
             <div className="container">
               <div className="row">
                 {/* Efficient Delivery */}

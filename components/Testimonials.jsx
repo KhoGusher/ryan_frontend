@@ -43,7 +43,7 @@ const Testimonials = () => {
 
   return (
     <div className="testimonial-container">
-      <h2><span style={{ color: 'steelblue' }}>Our</span> Impact <span style={{ color: 'steelblue' }}></span></h2>
+      <h2>What <span style={{ color: 'steelblue' }}>Our</span> Customers <span style={{ color: 'steelblue' }}>Say</span></h2>
       
       {slides.map((slide, index) => (
 

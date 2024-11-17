@@ -9,35 +9,36 @@ const TeamSection = () => {
       image: 'assets/img/team/team-1.jpg',
       name: 'Jacqueline Haynes',
       role: "Managing Director",
-      bio: " Read biography"
+      bio: "/biography/biography1",
+
     },
     {
       id: 2,
       image: 'assets/img/team/team-2.jpg',
       name: 'Lyndon Mlinde',
       role: "Operations Lead",
-      bio: "Read biography"
+      bio: "/biography/biography2"
     },
     {
       id: 3,
       image: 'assets/img/team/team-3.jpg',
       name: 'Pachawo Bisani',
       role: "Data Manager",
-      bio: "Read biography"
+      bio: "/biography/biography3"
     },
     {
       id: 4,
       image: 'assets/img/team/team-4.jpg',
       name: 'Atusaghe Mushani',
       role: "Legal Manager",
-      bio: "Read biography"
+      bio: "/biography/biography4"
     },
     {
       id: 5,
       image: 'assets/img/team/team-5.jpg',
       name: 'Clement Namanyah',
       role: "Partnerships Manager",
-      bio: "Read biography"
+      bio: "/biography/biography5"
     },
   ]
   return (
@@ -65,10 +66,10 @@ const TeamSection = () => {
                 <h4 className="text-primary">{teams.name}</h4>
                 <span className="fs-5">{teams.role}</span>
                 <Link
-                  href="#"
+                  href={teams.bio}
                   className="text-primary mt-2 d-block text-decoration-none fw-bold"
                 >
-                  {teams.bio}
+                  Read biography
                 </Link>
               </div>
             </div>
@@ -83,3 +84,14 @@ const TeamSection = () => {
 };
 
 export default TeamSection;
+
+
+
+
+
+
+
+
+
+
+

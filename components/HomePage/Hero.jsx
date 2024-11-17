@@ -14,14 +14,14 @@ const HeroCarousel = () => {
       button: { text: "Read More", link: "/services" },
     },
     {
-      image: "/assets/img/slide/slide-2.png",
+      image: "/assets/img/slide/slide-2.jpg",
       title: "Strategic Financial Solutions",
       description:
         "From venture capital to debt financing, Rayen Ltd provides tailored financial services that fuel innovation and expansion. Our dedicated team ensures each investment is thoroughly researched, strategically managed, and positioned for long-term success.",
       button: { text: "Contact Us", link: "/contact" },
     },
     {
-      image: "/assets/img/slide/slide-3.png",
+      image: "/assets/img/slide/slide-3.jpg",
       title: "Transforming Visions into Reality",
       description:
         "At Rayen Ltd, we believe in turning potential into progress. Through private equity support, operational redesign, and financial restructuring, we help businesses unlock value and lead with confidence in today’s competitive landscape.",
@@ -30,7 +30,7 @@ const HeroCarousel = () => {
   ];
 
   return (
-    <section id="hero">
+    <section id="hero" className=" mt-20">
       <Carousel
         fade
         interval={5000}
