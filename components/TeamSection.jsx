@@ -9,35 +9,35 @@ const TeamSection = () => {
       image: 'assets/img/team/team-1.jpg',
       name: 'Jacqueline Haynes',
       role: "Managing Director",
-      bio: "Biography"
+      bio: " Read biography"
     },
     {
       id: 2,
       image: 'assets/img/team/team-2.jpg',
       name: 'Lyndon Mlinde',
       role: "Operations Lead",
-      bio: "Biography"
+      bio: "Read biography"
     },
     {
       id: 3,
       image: 'assets/img/team/team-3.jpg',
       name: 'Pachawo Bisani',
       role: "Data Manager",
-      bio: "Biography"
+      bio: "Read biography"
     },
     {
       id: 4,
       image: 'assets/img/team/team-4.jpg',
       name: 'Atusaghe Mushani',
       role: "Legal Manager",
-      bio: "Biography"
+      bio: "Read biography"
     },
     {
       id: 5,
       image: 'assets/img/team/team-5.jpg',
       name: 'Clement Namanyah',
       role: "Partnerships Manager",
-      bio: "Biography"
+      bio: "Read biography"
     },
   ]
   return (

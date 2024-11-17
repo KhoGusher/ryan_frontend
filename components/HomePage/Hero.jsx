@@ -14,14 +14,14 @@ const HeroCarousel = () => {
       button: { text: "Read More", link: "/services" },
     },
     {
-      image: "/assets/img/slide/slide-2.jpg",
+      image: "/assets/img/slide/slide-2.png",
       title: "Strategic Financial Solutions",
       description:
         "From venture capital to debt financing, Rayen Ltd provides tailored financial services that fuel innovation and expansion. Our dedicated team ensures each investment is thoroughly researched, strategically managed, and positioned for long-term success.",
       button: { text: "Contact Us", link: "/contact" },
     },
     {
-      image: "/assets/img/slide/slide-3.jpg",
+      image: "/assets/img/slide/slide-3.png",
       title: "Transforming Visions into Reality",
       description:
         "At Rayen Ltd, we believe in turning potential into progress. Through private equity support, operational redesign, and financial restructuring, we help businesses unlock value and lead with confidence in today’s competitive landscape.",
@@ -90,7 +90,7 @@ const HeroCarousel = () => {
         }
 
         .carousel-image {
-          filter: blur(2px); 
+          filter: blur(0px); 
           height: 100%; 
           position: absolute;
           top: 0;

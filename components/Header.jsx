@@ -57,11 +57,38 @@ const HeaderSection = () => {
                     </li>
                   </ul>
                 </li>
-                <li>
+                {/* <li>
                   <Link href="/services" className="text-decoration-none">
-                    Services
+                    What we do
                   </Link>
+                </li> */}
+
+
+
+<li className="dropdown">
+                  <Link
+                    href="#"
+                    
+                    onClick={(e) => e.preventDefault()}
+                    className="text-decoration-none"
+                  >
+                    <span>What We Do</span> <i className="bi bi-chevron-down"></i>
+                  </Link>
+                  <ul>
+                    <li>
+                      <Link href="/services" className="text-decoration-none">
+                        Services offered
+                      </Link>
+                    </li>
+                  </ul>
                 </li>
+
+
+
+
+
+
+
                 <li className="dropdown">
                   <Link
                     href="#"
@@ -137,7 +164,7 @@ const HeaderSection = () => {
               <Link  className="text-decoration-none" href="/team">Team</Link>
             </li>
             <li onClick={handleBackClick}  className="list-group-item text-decoration-none">
-              <Link className="text-decoration-none" href="/services">Services</Link>
+              <Link className="text-decoration-none" href="/services">What we do</Link>
             </li>
             <li onClick={handleBackClick}  className="list-group-item text-decoration-none">
               <Link className="text-decoration-none" href="/contact">Contact</Link>

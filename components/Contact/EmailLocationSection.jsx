@@ -22,8 +22,6 @@ export default function EmailLocationSection() {
             <h4>Email:</h4>
             <p>
               lyndon@ratenlimited.com
-              <br />
-              jacque@rayenlimited.com
             </p>
           </div>
 

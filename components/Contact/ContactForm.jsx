@@ -11,7 +11,7 @@ const ContactForm = () => {
   return (
     <section id="contact" className="contact">
       <div className="container">
-        <div className="row mt-5 justify-content-center" data-aos="fade-up">
+        <div className="row mt-1 justify-content-center" data-aos="fade-up">
           <div className="col-lg-10">
             <form onSubmit={handleSubmit} className="php-email-form">
               <div className="row">

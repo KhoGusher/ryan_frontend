@@ -12,14 +12,14 @@ export default function Services() {
     >
       <div className="container pt-5">
         <div className="d-flex justify-content-between list-unstyled w-100">
-          <h2>Services</h2>
+          <h2>Services offered</h2>
           <ol>
             <li>
               <Link href="/" className="text-white text-decoration-none">
                 Home
               </Link>
             </li>
-            <li className="text-white">Services</li>
+            <li className="text-white">Services offered</li>
           </ol>
         </div>
       </div>

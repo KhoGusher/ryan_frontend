@@ -34,11 +34,10 @@ export default function Food() {
     </section>
     {/* End of breadcrumbs */}
       {/* Welcome section */}
-
       <div
         className="welcome-section"
         style={{
-          backgroundImage: "url('/assets/img/foods/pic-3.jpg')",
+          backgroundImage: "url('/assets/img/f.png')",
           backgroundSize: "cover",
           backgroundPosition: "center",
           height: "30vh",
@@ -47,6 +46,7 @@ export default function Food() {
         <div className="welcome-text">Welcome To Tara Foods</div>
       </div>
 
+<div className="pl-20 pr-20">
       {/* About section */}
       <div className="about-section">
         <div className="text-container">
@@ -136,7 +136,7 @@ export default function Food() {
             <div className="image-box">
               <div className="image-1">
                 <Image
-                  src="/assets/img/foods/pic-4.jpg"
+                  src="/assets/img/4.jpg"
                   className="rounded"
                   alt="Image 1"
                   width={500}
@@ -245,6 +245,7 @@ export default function Food() {
             </div>
           </div>
         </div>
+      </div>
       </div>
     </div>
   );

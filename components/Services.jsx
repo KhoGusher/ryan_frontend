@@ -37,7 +37,7 @@ const ServicesForm = () => {
     <section id="services" className="services section-bg">
       <div className="container" data-aos="fade-up">
         <h2 className="text-center py-3">
-          Our <span style={{ color: 'steelblue' }}>Services</span>
+          What <span style={{ color: 'steelblue' }}>We Do</span>
         </h2>
         <div className="row">
           {services.map((service) => (

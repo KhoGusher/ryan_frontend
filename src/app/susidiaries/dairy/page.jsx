@@ -34,14 +34,12 @@ export default function Dairy() {
       </div>
     </section>
     {/* End of breadcrumbs */}
-
-
       {/* Welcome section */}
 
       <div
         className="welcome-section"
         style={{
-          backgroundImage: "url('/assets/img/dairy/pic-8.avif')",
+          backgroundImage: "url('/assets/img/6.jpg')",
           backgroundSize: "cover",
           backgroundPosition: "center",
           height: "30vh",
@@ -49,6 +47,9 @@ export default function Dairy() {
       >
         <div className="welcome-text">Welcome To Rayen Dairy</div>
       </div>
+
+<div className="pl-20 pr-20">
+
 
       {/* About section */}
       <div className="about-section">
@@ -131,7 +132,7 @@ export default function Dairy() {
             <div className="image-box">
               <div className="image-1">
                 <Image
-                  src="/assets/img/foods/pic-4.jpg"
+                  src="/assets/img/8.jpg"
                   className="rounded"
                   alt="Image 1"
                   width={500}
@@ -244,6 +245,10 @@ export default function Dairy() {
           </div>
         </div>
       </div>
+      </div>
+
+
+      
 
       <Subsidiaries />
     </div>

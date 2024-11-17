@@ -8,31 +8,32 @@ const Subsidiaries = () => {
       name: 'Tara Foods Ltd',
       description:
         'Specializing in high-quality food production, Tara Foods ensures sustainable agricultural practices and superior products for consumers.',
-      image: '/assets/img/foods/pic-2.webp',
-      link: '#',
+      image: '/assets/img/r.png',
+      link: '/susidiaries/food',
     },
     {
       id: 2,
       name: 'Rayen Dairy Ltd',
       description:
         'With a focus on sustainable dairy farming, Rayen Dairy provides the finest dairy products to consumers and businesses alike.',
-      image: '/assets/img/dairy/pic-8.avif',
-      link: '#',
+      image: '/assets/img/5.jpg',
+      link: '/susidiaries/dairy',
     },
     {
       id: 3,
       name: 'Rayen Poultry Ltd',
       description:
         'Providing fresh and sustainable poultry products, Rayen Poultry is committed to quality and ethical farming practices.',
-      image: '/assets/img/poultry/poultry.jpg',
-      link: '#',
+      image: '/assets/img/2.jpg',
+      link: '/susidiaries/poultry',
     },
   ];
 
   return (
     <div className="products-section container mx-auto px-4 py-8">
+
       <h2 className="text-3xl font-semibold mb-4">
-        <span className="text-steelblue">Our</span> Subsidiaries
+        <span style={{color: 'steelblue'}}>Our</span> Subsidiaries
       </h2>
       <p className="pb-3 text-gray-600">
         Rayen Limited’s diverse subsidiaries drive innovation across agriculture, food, and global trade.

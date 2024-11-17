@@ -34,11 +34,10 @@ export default function Poultry() {
     </section>
     {/* End of breadcrumbs */}
       {/* Welcome section */}
-
       <div
         className="welcome-section"
         style={{
-          backgroundImage: "url('/assets/img/poultry/poultry.jpg')",
+          backgroundImage: "url('/assets/img/2.jpg')",
           backgroundSize: "cover",
           backgroundPosition: "center",
           height: "30vh",
@@ -47,6 +46,7 @@ export default function Poultry() {
         <div className="welcome-text">Welcome To Rayen Poultry</div>
       </div>
 
+<div className="pr-20 pl-20">
       {/* About section */}
       <div className="about-section">
         <div className="text-container">
@@ -133,7 +133,7 @@ export default function Poultry() {
             <div className="image-box">
               <div className="image-1">
                 <Image
-                  src="/assets/img/foods/pic-4.jpg"
+                  src="/assets/img/poultry/eggs.jpg"
                   className="rounded"
                   alt="Image 1"
                   width={500}
@@ -241,7 +241,7 @@ export default function Poultry() {
           </div>
         </div>
       </div>
-
+      </div>
       <Subsidiaries />
     </div>
   );
