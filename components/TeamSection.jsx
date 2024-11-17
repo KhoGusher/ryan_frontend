@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 const TeamSection = () => {
 
@@ -6,7 +7,7 @@ const TeamSection = () => {
   const Team = [
     {
       id: 1,
-      image: 'assets/img/team/team-1.jpg',
+      image: '/assets/img/team/team-1.jpg',
       name: 'Jacqueline Haynes',
       role: "Managing Director",
       bio: "/biography/biography1",
@@ -14,28 +15,28 @@ const TeamSection = () => {
     },
     {
       id: 2,
-      image: 'assets/img/team/team-2.jpg',
+      image: '/assets/img/team/team-2.jpg',
       name: 'Lyndon Mlinde',
       role: "Operations Lead",
       bio: "/biography/biography2"
     },
     {
       id: 3,
-      image: 'assets/img/team/team-3.jpg',
+      image: '/assets/img/team/team-3.jpg',
       name: 'Pachawo Bisani',
       role: "Data Manager",
       bio: "/biography/biography3"
     },
     {
       id: 4,
-      image: 'assets/img/team/team-4.jpg',
+      image: '/assets/img/team/team-4.jpg',
       name: 'Atusaghe Mushani',
       role: "Legal Manager",
       bio: "/biography/biography4"
     },
     {
       id: 5,
-      image: 'assets/img/team/team-5.jpg',
+      image: '/assets/img/team/team-5.jpg',
       name: 'Clement Namanyah',
       role: "Partnerships Manager",
       bio: "/biography/biography5"
@@ -43,7 +44,7 @@ const TeamSection = () => {
   ]
   return (
     <section id="team" className="team section-bg">
-      <div className="container">
+      <div className="container justify-content-center">
         <div className="section-title" data-aos="fade-up">
           <h2>
             Our <strong>Team</strong>
@@ -56,10 +57,12 @@ const TeamSection = () => {
 <div key={teams.id} className="col-lg-4 col-md-6 d-flex align-items-stretch">
             <div className="member" data-aos="fade-up">
               <div className="member-img text-center">
-                <img
+              <Image
                   src={teams.image}
                   className="img-fluid"
                   alt={teams.name}
+                  width={500}
+                  height={500}
                 />
               </div>
               <div className="member-info text-start mt-3">

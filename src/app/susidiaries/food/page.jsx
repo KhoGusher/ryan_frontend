@@ -46,7 +46,7 @@ export default function Food() {
         <div className="welcome-text">Welcome To Tara Foods</div>
       </div>
 
-<div className="pl-20 pr-20">
+<div className="px-10 px-lg-20">
       {/* About section */}
       <div className="about-section">
         <div className="text-container">

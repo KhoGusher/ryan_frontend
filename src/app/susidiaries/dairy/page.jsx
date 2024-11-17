@@ -48,7 +48,7 @@ export default function Dairy() {
         <div className="welcome-text">Welcome To Rayen Dairy</div>
       </div>
 
-<div className="pl-20 pr-20">
+<div className="px-10 px-lg-20">
 
 
       {/* About section */}

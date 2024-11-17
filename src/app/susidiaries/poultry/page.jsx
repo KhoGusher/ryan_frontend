@@ -46,7 +46,7 @@ export default function Poultry() {
         <div className="welcome-text">Welcome To Rayen Poultry</div>
       </div>
 
-<div className="pr-20 pl-20">
+<div className="px-10 px-lg-20">
       {/* About section */}
       <div className="about-section">
         <div className="text-container">
