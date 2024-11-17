@@ -62,11 +62,12 @@ export default function LoginPage() {
         </form>
 
         {/* Additional Links */}
-        <p className="mt-4 text-center text-gray-600">
-          Don't have an account?{" "}
-          <Link href="#" className="text-blue-500 text-decoration-none">
-            Sign up
-          </Link>
+       <p className="mt-4 text-center text-gray-600">
+            Don&apos;t have an account?{" "}
+        <Link href="#" className="text-blue-500 text-decoration-none">
+              Sign up
+            </Link>
+           </p>
         </p>
       </div>
     </div>
