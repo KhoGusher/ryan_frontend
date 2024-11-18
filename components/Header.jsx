@@ -127,7 +127,7 @@ const HeaderSection = () => {
                     Contact
                   </Link>
                 </li>
-                <li className="px-10">
+                {/* <li className="px-10">
                   {
                     loggedin ? <Link
                     href="/login"
@@ -144,7 +144,7 @@ const HeaderSection = () => {
                   </Link>
                   }
                   
-                </li>
+                </li> */}
               </ul>
 
               <i
@@ -234,7 +234,7 @@ const HeaderSection = () => {
                 Rayen Poultry Ltd
               </Link>
             </li>
-            <li onClick={handleBackClick} className="py-2">
+            {/* <li onClick={handleBackClick} className="py-2">
                   {
                     loggedin ? <Link
                     href="/login"
@@ -251,7 +251,7 @@ const HeaderSection = () => {
                   </Link>
                   }
                   
-                </li>
+                </li> */}
           </ul>
         </div>
       )}
