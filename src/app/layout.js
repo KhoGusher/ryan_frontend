@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import Breadcrumbs from "../../components/BreadCrumbs";
-import { Verdana } from 'next/font/google';
+import { Inter } from 'next/font/google';
 import 'boxicons/css/boxicons.min.css';
 import HeaderSection from "../../components/Header";
 

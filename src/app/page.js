@@ -17,7 +17,7 @@ function page() {
     <div>
       <HeroCarousel/>
       <IconSection/>
-      {/* <AboutSection/> */}
+      <AboutSection/>
       <ServicesForm/>
       <Subsidiaries/>
       <ImpactSection/>
